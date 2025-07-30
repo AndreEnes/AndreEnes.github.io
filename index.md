@@ -10,3 +10,5 @@ nav_order: 1
 
 Welcome to my portfolio site!  
 Use the links above to explore my work, education, and projects.
+
+![Pavão](images/peacock.webp)
