@@ -1,2 +1,4 @@
 title: Project Peacock
 theme: jekyll-theme-minimal
+markdown: kramdown
+permalink: pretty
