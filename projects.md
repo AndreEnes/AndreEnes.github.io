@@ -4,8 +4,6 @@ title: Projects
 nav_order: 2
 ---
 
-<link rel="stylesheet" href="/assets/css/style.css">
-
 [Home](index.md) | [Projects](projects.md) | [Experience](experience.md) | [Education](education.md)
 
 ## List
