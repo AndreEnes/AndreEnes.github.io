@@ -4,61 +4,65 @@ title: Projects
 nav_order: 2
 ---
 
-[Home](index.md) | [Projects](projects.md) | [Experience](experience.md) | [Education](education.md)
+[Home](index.md)
 
 ## List
 
-1. Sensor System for Predictive Maintenance
-2. ML Regression Toolkit
-3. Extended Kalman Filter for a Quadcopter
-4. Ancelotti Robot
-5. SiiuuTunes
-6. Palletizer Robotic Arm
-7. Bonus
+- [Sensor System for Predictive Maintenance](#sensor-system-for-predictive-maintenance)
+- [ML Regression Toolkit](#ml-regression-toolkit-internship)
+- [Extended Kalman Filter for a Quadcopter](#extended-kalman-filter-for-a-quadcopter)
+- [Ancelotti Robot](#ancelotti-robot)
+- [SiiuuTunes](#siiuutunes)
+- [Palletizer Robotic Arm](#palletizer-robotic-arm)
+- [Bonus](#bonus)
 
 ## Projects
 
-### Sensor System for Predictive Maintenance
+## Sensor System for Predictive Maintenance
 
 Sensor module design, embedded development, and ML for predictive maintenance.  
-[Read more](https://www.agendagreenauto.pt/projeto/)
+It was developed in the scope of the [GreenAuto](https://www.agendagreenauto.pt/projeto/) Project.
 
-#### Highlights
+You can read the full dissertation here: [Dissertation](documents/SensorSystemForPredictiveMaintenanceInIndustrialEnvironments.pdf)
 
-#### Lowlights
+### Highlights
 
-#### Lessons Learned
+### Lowlights
 
-### ML Regression Toolkit (Internship)
+- I only noticed that there was a typo in the title the day before presenting the dissertation. Still feel
+
+### Lessons Learned
+
+## ML Regression Toolkit (Internship)
 
 Python toolkit using XGBoost, SHAP, and Streamlit for regression optimization.
 
-#### Highlights
+### Highlights
 
-#### Lowlights
+### Lowlights
 
-#### Lessons Learned
+### Lessons Learned
 
-### Extended Kalman Filter for a Quadcopter
+## Extended Kalman Filter for a Quadcopter
 
 Developed a 3D position estimation system for an aerial robot using an Extended Kalman Filter (EKF). The setup involved static beacons placed at known locations, measuring distances to the robot.
 
 Built with Webots, ROS, Python, and C++, the system integrates sensor data and simulates beacon-based localization. The project covered EKF development, implementation, and analysis of results.
 
-#### Highlights
+### Highlights
 
 - Had to understand how to apply theory to practice.
 - Gained a lot of experience with handling messy tools like WeBots. The support was poor and ChatGPT was still at a point where you were lucky if it was available due to the high demand, so I spent many hours banging my head against the wall.
 - Got to see lots of cool drones in one of the laboratories of the Universidad de Sevilla, namely through the [Griffin](https://griffin-erc-advanced-grant.eu/) project.
 - The report and presentation were done fully in Spanish.
 
-#### Lowlights
+### Lowlights
 
 - At the time, my knowledge was more limited regarding software tools like Docker. It slowed me down considerably due to having to work with tools like ROS and WeBots.
 
-#### Lessons Learned
+### Lessons Learned
 
-#### Cool Drones
+### Cool Drones
 
 Open to see some cool drones:
 
@@ -70,7 +74,7 @@ Open to see some cool drones:
 
 ![Blurry Pipe Boy](/images/projects/ekf/pipe.jpg)
 
-### Palletizer Robotic Arm
+## Palletizer Robotic Arm
 
 3D Printed Palletizer servo-controlled arm. Objective: pick up pieces and organized them by colour. Components: servo motors, colour sensor, lcd, ATmega328p.
 
@@ -83,15 +87,32 @@ Open to see some cool drones:
 
 ### Lowlights
 
-- It was during the covid lockdown, so access to hardware tools was quite limited which made it harder to debug
-- The component percision was low, so the whole project was a bit finnicky
+- It was during the covid lockdown, so access to hardware tools was quite limited which made it harder to debug.
+- The component precision was low, so the whole project was a bit finnicky.
+- Single buttons make for annoying *"User Interfaces"*.
 
 ### Lessons Learned
 
 - One must be careful with hardware, frying the chip is not difficult
 - Necessity really leads to enginuity
 
-### Bonus
+## Ancelotti Robot
+
+### Highlights
+
+### Lowlights
+
+### Lessons Learned
+
+## SiiuuTunes
+
+### Highlights
+
+### Lowlights
+
+### Lessons Learned
+
+## Bonus
 
 #### Ray Tracer
 
