@@ -4,11 +4,12 @@ title: Home
 nav_order: 1
 ---
 
-[Home](index.md) | [Projects](projects.md) | [Experience](experience.md) | [Education](education.md)
+[Home](index.md) | [Projects](projects.md) | [Experience](experience.md) | [Reflections](reflections.md)
 
 ## André Enes
 
-Welcome to my portfolio site!  
-Use the links above to explore my work, education, and projects.
+LinkedIn is a battleground. Maybe a quieter page will make me share my work with less anxiety.
 
-![Pavão](images/peacock.webp)
+![Pavão](images/index/peacock.webp)
+
+![Truth](images/index/truf.gif)
