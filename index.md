@@ -4,7 +4,7 @@ title: Home
 nav_order: 1
 ---
 
-[Home](index.md) | [Projects](projects.md) | [Experience](experience.md) | [Reflections](reflections.md)
+[Home](index.md) | [Projects](projects.md) | [Hackathons](experience.md) | [Reflections](reflections.md)
 
 ## André Enes
 
@@ -13,3 +13,7 @@ LinkedIn is a battleground. Maybe a quieter page will make me share my work with
 ![Pavão](images/index/peacock.webp)
 
 ![Truth](images/index/truf.gif)
+
+Who doesn't appreciate a more honest view on one's work? Look at the uncropped and compressed profile pic:
+
+![handoemso](images/index/_MG_3643.jpg)

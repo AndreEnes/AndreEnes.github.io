@@ -13,7 +13,7 @@ nav_order: 3
 - [Why we use the cheddar as a measure of our opulence?](https://genius.com/Nickelus-f-and-shawn-kemp-bathory-motives-lyrics)
 - Prince died of a fentanyl overdose in 2016, pioneer through and through.
 - Long-haired men must be confident in their genetics. Or must be ready to let the hair go when the time comes.
-- People turn almost anything into nostalgia, look at Pen&Pixel album covers
+- People turn almost anything into nostalgia, look at Pen&Pixel album covers.
 
 ## Great Teachings of Life
 

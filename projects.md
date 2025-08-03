@@ -65,28 +65,28 @@ Open to see some cool drones. (Click the arrows to open each image).
 <details>
   <summary>📷 Big Boy</summary>
 
-![BigBoy](images/projects/ekf/ganda_drone.jpg)
+<img src="images/projects/ekf/ganda_drone.jpg" alt="BigBoy" style="max-width: 100%; height: auto;" />
 
 </details>
 
 <details>
   <summary>📷 Tunnel Inspection Boy</summary>
 
-![Estrano](images/projects/ekf/longo.jpg)
+<img src="images/projects/ekf/longo.jpg" alt="BigBoy" style="max-width: 100%; height: auto;" />
 
 </details>
 
 <details>
   <summary>📷 Birdie</summary>
 
-![Pájaro](images/projects/ekf/passaro.jpg)
+<img src="images/projects/ekf/passaro.jpg" alt="BigBoy" style="max-width: 100%; height: auto;" />
 
 </details>
 
 <details>
   <summary>📷 Blurry Pipe Boy</summary>
 
-![Pájaro](images/projects/ekf/pipe.jpg)
+<img src="images/projects/ekf/pipe.jpg" alt="BigBoy" style="max-width: 100%; height: auto;" />
 
 </details>
 
@@ -121,7 +121,7 @@ I followed this book to practice some C/C++ while learning something outside "my
 <details>
   <summary>📷 Final rendered image</summary>
 
-![craysiete](images/projects/craysiete/lindissimo.png)
+<img src="images/projects/craysiete/lindissimo.png" alt="BigBoy" style="max-width: 100%; height: auto;" />
 
 </details>
 
@@ -130,7 +130,7 @@ It is quite easy to follow and super satisfying to see some basic renders. The f
 <details>
   <summary>📷 Oopsie</summary>
 
-![oopsie](images/projects/craysiete/lindissirrissimo.png)
+<img src="images/projects/craysiete/lindissirrissimo.png" alt="BigBoy" style="max-width: 100%; height: auto;" />
 
 </details>
 
