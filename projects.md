@@ -23,6 +23,12 @@ nav_order: 2
 Sensor module design, embedded development, and ML for predictive maintenance.  
 It was developed in the scope of the [GreenAuto](https://www.agendagreenauto.pt/projeto/) Project.
 
+This project explored the implementation of Predictive Maintenance in manufacturing environments that relied on legacy machinery lacking modern sensor capabilities. A wireless sensor system was developed using IoT hardware and Machine Learning algorithms to monitor equipment health through vibration, sound, and temperature data.
+
+The system was designed specifically for Automated Guided Vehicles (AGVs) and nearby machines, with a focus on cost-effectiveness and space constraints. Data preprocessing techniques based on time-domain features were employed to minimize wireless data transmission. Supervised learning models delivered highly accurate anomaly detection results, while unsupervised models performed poorly. A comparative analysis of sensors with varying costs was also conducted to evaluate their performance.
+
+This work demonstrated how emerging technologies could extend Industry 4.0 capabilities to older equipment, reducing downtime and optimizing maintenance schedules.
+
 You can read the full dissertation here: [Dissertation](documents/SensorSystemForPredictiveMaintenanceInIndustrialEnvironments.pdf)
 
 ### Highlights
@@ -45,9 +51,18 @@ Python toolkit using XGBoost, SHAP, and Streamlit for regression optimization.
 
 ## Extended Kalman Filter for a Quadcopter
 
-Developed a 3D position estimation system for an aerial robot using an Extended Kalman Filter (EKF). The setup involved static beacons placed at known locations, measuring distances to the robot.
+This project focused on 3D localization of an aerial robot (UAV) using an Extended Kalman Filter (EKF) with beacon-based distance measurements. It was implemented using Python, C++, ROS, and Webots to estimate the UAV’s position by fusing noisy data from static beacons with a motion model. The work included:
 
-Built with Webots, ROS, Python, and C++, the system integrates sensor data and simulates beacon-based localization. The project covered EKF development, implementation, and analysis of results.
+- Designing state and measurement models for UAV motion.
+- Developing a nonlinear observation model based on beacon distances.
+- Implementing an EKF with dynamic Jacobian updates.
+- Creating ROS nodes for beacons, the UAV, and the filter logic.
+- Running simulations and visualizations in Webots and Jupyter.
+
+Extensive testing demonstrated that the EKF accurately estimated the UAV’s position under various conditions, including sensor noise, beacon layout changes, and signal loss.
+You can check the report [here (in spanish)](documents/ROS_EKF_WITH_BEACONS.pdf).
+
+![simulation](images/projects/ekf/simulation.jpg)
 
 ### Highlights
 
@@ -59,12 +74,19 @@ Built with Webots, ROS, Python, and C++, the system integrates sensor data and s
 ### Lowlights
 
 - At the time, my knowledge was more limited regarding software tools like Docker. It slowed me down considerably due to having to work with tools like ROS and WeBots.
+- I had a basically incompatible schedule with my group partner, so working together was not easy and there was some duplicated work.
 
 ### Lessons Learned
 
+- Although software development tools like Docker are often not the most important part of a project, they make it easier to get to your end goal.
+- Robotics is a really broad field and the possibilities are never ending.
+- Unless open source tools get a dedicated team to them, documentation and tutorials will probably be scarce.
+- Probing around is a good way to learn.
+- Try to be ready for meetings ahead of time. Having clear goals is a timesaver.
+
 ### Cool Drones
 
-Open to see some cool drones:
+Here are some pictures of cool drones that were in the [Griffin](https://griffin-erc-advanced-grant.eu/) project laboratory:
 
 ![Big Boy](/images/projects/ekf/ganda_drone.jpg)
 
@@ -98,6 +120,16 @@ Open to see some cool drones:
 
 ## Ancelotti Robot
 
+This project explored the integration of facial gesture recognition and animatronic control by developing a system in which a robotic head imitated human facial movements in real time. Using a webcam and [MediaPipe's Face Mesh](https://ai.google.dev/edge/mediapipe/solutions/vision/face_landmarker), facial landmarks were detected and analyzed to track expressions such as eye movement, eyebrow position, and mouth motion.
+
+Servo control of the animatronic head was achieved using a Pololu Mini Maestro controller, initially interfaced via an Arduino UNO and later optimized with a pure Python-based solution, reducing hardware complexity. The robotic head, AnimaTRON 1.0, included eight servos that replicated facial gestures based on normalized landmark distances.
+
+Although originally intended to integrate Botszy, a professional animatronic rigging platform, the project faced compatibility issues and proceeded with a manual software implementation.
+
+Check the [report](documents/Ancelotti_Robot.pdf) for more information.
+
+![cabeza](images/projects/ancelotti/cabeza.jpg)
+
 ### Highlights
 
 ### Lowlights
@@ -114,7 +146,7 @@ Open to see some cool drones:
 
 ## Bonus
 
-#### Ray Tracer
+### Ray Tracer
 
 I followed this book to practice some C/C++ while learning something outside "my realm": [Ray Tracing In One Weekend](https://raytracing.github.io/books/RayTracingInOneWeekend.html). It takes you from nothing to creating an image like this:
 
