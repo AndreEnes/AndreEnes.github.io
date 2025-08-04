@@ -12,8 +12,8 @@ nav_order: 2
 - [ML Regression Toolkit](#ml-regression-toolkit-internship)
 - [Extended Kalman Filter for a Quadcopter](#extended-kalman-filter-for-a-quadcopter)
 - [Ancelotti Robot](#ancelotti-robot)
-- [SiiuuTunes](#siiuutunes)
 - [Palletizer Robotic Arm](#palletizer-robotic-arm)
+- [SiiuuTunes](#siiuutunes)
 - [Bonus](#bonus)
 
 ## Projects
@@ -35,17 +35,37 @@ You can read the full dissertation here: [Dissertation](documents/SensorSystemFo
 
 ### Lowlights
 
-- I only noticed that there was a typo in the title the day before presenting the dissertation. Still feel
+- I only noticed that there was a typo in the title the day before presenting the dissertation. Still feel a bit embarrassed.
 
 ### Lessons Learned
 
 ## ML Regression Toolkit (Internship)
 
-Python toolkit using XGBoost, SHAP, and Streamlit for regression optimization.
+This project was developed to solve generic regression problems by finding optimal input parameters for a desired target output using machine learning. It employed the XGBoost library's XGBRegressor for predictions, with hyperparameter tuning handled by Hyperopt, and feature optimization performed using simulated annealing via SciPy’s dual_annealing.
+
+The app featured a user-friendly Streamlit interface, though the machine learning logic was modularized to support integration with other frontends. Users could train models on custom datasets, make predictions from new inputs, and find optimal parameter configurations to approach a target output. The system supported both continuous and discrete variables and allowed detailed model explanation using SHAP values.
+
+A key functionality included incremental model retraining, which significantly reduced computational overhead. Additionally, project configurations were saved using JSON templates for persistent and repeatable workflows. Feature importance was visualized through SHAP beeswarm plots, offering intuitive insights into the model’s decision-making process.
+
+While the toolkit was designed with extensibility in mind, further improvements were identified, such as better discrete optimization via mixed-integer programming, more advanced SHAP plots, and real-time convergence visualization during optimization.
+
+Take a look at the project in the [repo](https://github.com/AndreEnes/argentina-opt).
+
+![argentina](images/projects/argentina/screenshot.png)
 
 ### Highlights
 
+- This internship was right after I had my Machine Learning class, so I got to work on a real project with it right away.
+- 1st experience in a "work environment" where I got to participate in academic research.
+- The objective of the project was very palpable, so it was great to see improvements daily.
+- Streamlit is awesome!
+
 ### Lowlights
+
+- Pre ChatGPT days made setting up Python packages a bit messy, since I had little to no guidance on how to properly use all the tools to make software development more reliable.
+- The code was quite messy. I don't want to look at it again.
+- Streamlit is great, but for bigger projects, it becomes hard to deal with.
+- I'm not sure if anyone used it.
 
 ### Lessons Learned
 
@@ -96,28 +116,6 @@ Here are some pictures of cool drones that were in the [Griffin](https://griffin
 
 ![Blurry Pipe Boy](/images/projects/ekf/pipe.jpg)
 
-## Palletizer Robotic Arm
-
-3D Printed Palletizer servo-controlled arm. Objective: pick up pieces and organized them by colour. Components: servo motors, colour sensor, lcd, ATmega328p.
-
-### Highlights
-
-- Inspired interest in embedded systems
-- Used different types of components
-- Hardware restrictions lead to creative solutions
-  - The microcontroller only has 2 ports capable of running the servo motors, so separate transistors were used to make a "pin selector" to change how the pins were connected to each servo.
-
-### Lowlights
-
-- It was during the covid lockdown, so access to hardware tools was quite limited which made it harder to debug.
-- The component precision was low, so the whole project was a bit finnicky.
-- Single buttons make for annoying *"User Interfaces"*.
-
-### Lessons Learned
-
-- One must be careful with hardware, frying the chip is not difficult
-- Necessity really leads to enginuity
-
 ## Ancelotti Robot
 
 This project explored the integration of facial gesture recognition and animatronic control by developing a system in which a robotic head imitated human facial movements in real time. Using a webcam and [MediaPipe's Face Mesh](https://ai.google.dev/edge/mediapipe/solutions/vision/face_landmarker), facial landmarks were detected and analyzed to track expressions such as eye movement, eyebrow position, and mouth motion.
@@ -136,7 +134,49 @@ Check the [report](documents/Ancelotti_Robot.pdf) for more information.
 
 ### Lessons Learned
 
+## Palletizer Robotic Arm
+
+This project involved building and programming a robotic arm in a "Palletizer" configuration capable of sorting three objects based on their color. The system used a TCS3200 color sensor to identify each object's color, and a set of SG90 servo motors to control the robotic arm's movements. Once identified, the object was placed in the corresponding position for its color.
+
+The arm's components and motion paths—including sensor, object pickup, and drop-off positions—were configurable via buttons and a 16x2 LCD, which also displayed real-time status updates. Configurations were stored in the EEPROM, enabling persistent memory between sessions.
+
+To control four servo motors using limited PWM outputs, a transistor-multiplexing approach was implemented, optimizing pin usage on the Atmega328p microcontroller. Each servo had an associated state machine for movement control, and calibration modes were built in to allow fine-tuned positioning.
+
+The color detection logic analyzed pulse frequency from the sensor using external timers to determine RGB values and classify the object. The system’s flow was structured as a finite state machine, allowing a seamless process from object detection to classification and placement.
+
+Overall, the project demonstrated low-level embedded systems programming, motor control, sensor integration, and state-machine-based automation.
+
+### Highlights
+
+- Inspired interest in embedded systems
+- Used different types of components
+- Hardware restrictions lead to creative solutions
+  - The microcontroller only has 2 ports capable of running the servo motors, so separate transistors were used to make a "pin selector" to change how the pins were connected to each servo.
+
+### Lowlights
+
+- It was during the covid lockdown, so access to hardware tools was quite limited which made it harder to debug.
+- The component precision was low, so the whole project was a bit finnicky.
+- Single buttons make for annoying _"User Interfaces"_.
+
+### Lessons Learned
+
+- One must be careful with hardware, frying the chip is not difficult.
+- Necessity really leads to ingenuity.
+
 ## SiiuuTunes
+
+This C++ project aimed to replicate core Spotify functionality, featuring multiple user roles: listener, artist, and admin. Users could sign up, create playlists, search songs, report artists, and explore promoted tracks.
+
+Despite facing major challenges with MSYS2 library installations, GUI management, MP3 playback, and metadata extraction, the app implemented key features including:
+
+- Role-based interface and permissions
+- Dynamic playlists with song addition (handling SQL injection via input sanitization)
+- A “SiiiUTunes” tab showcasing artist-promoted content
+- Artist-specific menus for uploading songs
+- Basic search and report mechanisms
+
+Due to time constraints and limited documentation for audio libraries, MP3 playback was not fully implemented, though the team gained the necessary technical understanding and could have completed it with 1–2 more days.
 
 ### Highlights
 
