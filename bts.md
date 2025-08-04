@@ -6,6 +6,10 @@ nav_order: 3
 
 [Home](index.md)
 
+## ⚠️ WARNING ⚠️
+
+This section is not strictly "professional". Let a bit loose. Check out the [Projects](projects.md) tab for that.
+
 ## Behind the Scenes
 
 Who doesn't appreciate a more honest view on one's work? Look at the uncropped and very compressed profile pic:

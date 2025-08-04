@@ -12,6 +12,7 @@ nav_order: 2
 - [ML Regression Toolkit](#ml-regression-toolkit-internship)
 - [Extended Kalman Filter for a Quadcopter](#extended-kalman-filter-for-a-quadcopter)
 - [Ancelotti Robot](#ancelotti-robot)
+- [SCARA Robot](#scara-robot)
 - [Palletizer Robotic Arm](#palletizer-robotic-arm)
 - [SiiuuTunes](#siiuutunes)
 - [Bonus](#bonus)
@@ -29,15 +30,31 @@ The system was designed specifically for Automated Guided Vehicles (AGVs) and ne
 
 This work demonstrated how emerging technologies could extend Industry 4.0 capabilities to older equipment, reducing downtime and optimizing maintenance schedules.
 
-You can read the full dissertation here: [Dissertation](documents/SensorSystemForPredictiveMaintenanceInIndustrialEnvironments.pdf)
+You can read the full dissertation here: [Dissertation](documents/SensorSystemForPredictiveMaintenanceInIndustrialEnvironments.pdf). For a more condensed version, check out the [slides](documents/Dissertation_Presentatio.pdf) for the presentation.
+
+![testbed](images/projects/sensor_system/testbed.jpg)
 
 ### Highlights
+
+- Got to work on several different layers:
+  - Sensor selection
+  - Firmware development
+  - Data analysis
+  - Machine Learning
+  - Databases
+- Very satisfying to work on a brand new project.
+- Research is cool. Felt like I was doing work that can be useful for the future.
+- Biggest project to date.
 
 ### Lowlights
 
 - I only noticed that there was a typo in the title the day before presenting the dissertation. Still feel a bit embarrassed.
+- I didn't have a lot of support, so I felt a bit lost, especially in the beginning.
 
 ### Lessons Learned
+
+- You can't do everything. You can't test everything. Exploration is crucial, but it has to end at a certain time. Otherwise, you'll be stuck in the universe of possibilities.
+- Code becomes legacy the moment it is written.
 
 ## ML Regression Toolkit (Internship)
 
@@ -126,7 +143,36 @@ Although originally intended to integrate Botszy, a professional animatronic rig
 
 Check the [report](documents/Ancelotti_Robot.pdf) for more information.
 
-![cabeza](images/projects/ancelotti/cabeza.jpg)
+![lindu](images/projects/ancelotti/image21.gif)
+![final](images/projects/ancelotti/ancelotti.gif)
+
+### Highlights
+
+### Lowlights
+
+### Lessons Learned
+
+## SCARA Robot
+
+This project involved modeling and controlling a SCARA robotic arm using direct and inverse kinematics, Jacobian analysis, and trajectory planning.
+
+##### Direct Kinematics
+
+Reference frames were defined using the Denavit-Hartenberg method, allowing computation of transformation matrices. Joint inputs were read from a spreadsheet and applied to the robot using existing functions.
+
+##### Inverse Kinematics
+
+Geometric equations were derived to calculate joint values from target coordinates. Input constraints were checked, and existing code was updated to handle multiple θ₂ solutions.
+
+##### Jacobian and Velocity Control
+
+The Jacobian matrix was used to convert desired end-effector velocities into joint velocities, enabling real-time velocity control through matrix operations and feedback.
+
+##### Trajectory Control
+
+Two modes of trajectory control were implemented: linear and circular. Both included real-time correction for path deviations and automatic stopping at the destination.
+
+The project was done in a custom simulator, created by my professor at the time, so I don't have any pictures of it working. Here is one of a SCARA robot to give more context: ![SCARA](images/projects/scara/SCARA_robot_2R.png)
 
 ### Highlights
 
@@ -145,6 +191,14 @@ To control four servo motors using limited PWM outputs, a transistor-multiplexin
 The color detection logic analyzed pulse frequency from the sensor using external timers to determine RGB values and classify the object. The system’s flow was structured as a finite state machine, allowing a seamless process from object detection to classification and placement.
 
 Overall, the project demonstrated low-level embedded systems programming, motor control, sensor integration, and state-machine-based automation.
+
+Here is a picture of the prototype (without any of the coloured pieces):
+
+![prototype](images/projects/palletizer/prototype.jpg)
+
+And here is the hardware schematic:
+
+![schematic](images/projects/palletizer/schematic.png)
 
 ### Highlights
 
@@ -166,6 +220,8 @@ Overall, the project demonstrated low-level embedded systems programming, motor 
 
 ## SiiuuTunes
 
+The name was inspired by the group name: **_C++R7_**. The best name and what one should be inspired to be.
+
 This C++ project aimed to replicate core Spotify functionality, featuring multiple user roles: listener, artist, and admin. Users could sign up, create playlists, search songs, report artists, and explore promoted tracks.
 
 Despite facing major challenges with MSYS2 library installations, GUI management, MP3 playback, and metadata extraction, the app implemented key features including:
@@ -180,9 +236,21 @@ Due to time constraints and limited documentation for audio libraries, MP3 playb
 
 ### Highlights
 
+- The name is amazing.
+- "Palpable" project with a GUI and a relatable objective.
+-
+
 ### Lowlights
 
+- I did not know about [WSL](https://en.wikipedia.org/wiki/Windows_Subsystem_for_Linux). Developing C++ in Windows is one of the most if not the most frustrating experience of all time.
+- Learning C++ while doing the project was interesting. I knew C before hand, so it was not as "shocking" as if I only knew Python.
+- My OOP skills were in the "early stages".
+- Had to basically do the project alone.
+
 ### Lessons Learned
+
+- Sometimes is better to stick with the simpler solution.
+- Be easy to work with is essential for everyone.
 
 ## Bonus
 

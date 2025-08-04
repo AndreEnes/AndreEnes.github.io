@@ -4,7 +4,7 @@ title: Home
 nav_order: 1
 ---
 
-[Home](index.md) | [Projects](projects.md) | [Hackathons](hackathons.md) | [Behind the Scenes](bts.md)
+[Projects](projects.md) | [Hackathons](hackathons.md) | [Behind the Scenes](bts.md)
 
 ## André Enes
 
