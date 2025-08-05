@@ -13,6 +13,7 @@ nav_order: 2
 - [Extended Kalman Filter for a Quadcopter](#extended-kalman-filter-for-a-quadcopter)
 - [Ancelotti Robot](#ancelotti-robot)
 - [SCARA Robot](#scara-robot)
+- [Dashcam](#dashcam)
 - [Palletizer Robotic Arm](#palletizer-robotic-arm)
 - [SiiuuTunes](#siiuutunes)
 - [Bonus](#bonus)
@@ -55,6 +56,7 @@ You can read the full dissertation here: [Dissertation](documents/SensorSystemFo
 
 - You can't do everything. You can't test everything. Exploration is crucial, but it has to end at a certain time. Otherwise, you'll be stuck in the universe of possibilities.
 - Code becomes legacy the moment it is written.
+- One looks at a million datasets, but none ever truly matches your expectations.
 
 ## ML Regression Toolkit (Internship)
 
@@ -85,6 +87,10 @@ Take a look at the project in the [repo](https://github.com/AndreEnes/argentina-
 - I'm not sure if anyone used it.
 
 ### Lessons Learned
+
+- Write code with how to test it in mind.
+- Google Colab was a killer idea.
+- Put headphones on with no music to listen to office drama. It might help with sleepy 2 o'clocks.
 
 ## Extended Kalman Filter for a Quadcopter
 
@@ -148,9 +154,20 @@ Check the [report](documents/Ancelotti_Robot.pdf) for more information.
 
 ### Highlights
 
+- This project was basically a revamp of an older one made by a student in the prior year. We started from scratch and outdid his work with a fraction of the effort.
+- It was very easy to understand if something was going wrong by making a stupid face.
+- The project was inspired by a friend of the professor who was a puppeteer that had worked on Star Wars. Very random.
+
 ### Lowlights
 
+- We really tried to make Botszy work, but it was simply not very good. It was schedule to be released in 2022...
+- The servo control was very sensitive to small changes. We could have implemented a signal attenuator to make it smoother.
+
 ### Lessons Learned
+
+- ML models made for smartphones run really well on laptops.
+- It is often worth it to see what else is available.
+- Simple ideas and simple implementations make people happy.
 
 ## SCARA Robot
 
@@ -176,9 +193,67 @@ The project was done in a custom simulator, created by my professor at the time,
 
 ### Highlights
 
+- Working with Robotics topics is fun.
+- Having to think in 3 dimensions is satisfying. Wish I took up technical drawing. I should learn it and CAD as well (Although I've had some exploration time with it).
+
 ### Lowlights
 
+- Working with a custom simulator came with some "lack of documentation" problems.
+
 ### Lessons Learned
+
+- It's ok to ask stupid questions. I had totally forgotten what the "Inner Product" was and sent an email to my Professor, for which we answered me in person. He made me understand I was being stupid, but in a kind way. I've had worse experiences.
+
+## Dashcam
+
+IoT Crash Detection Camera System
+
+In 2019, over 141,000 traffic victims were reported in Spain. Identifying the cause of an accident was often a complex task, especially without reliable evidence. DASHCAM was developed to address this issue by combining IoT technology with real-time data capture, offering automatic visual documentation of accidents.
+
+##### Project Goal
+
+The system was designed to:
+
+- Detects vehicle crashes using motion sensors
+- Captures video and images at the moment of impact
+- Sends visual evidence to subscribed users instantly via Telegram
+
+##### Hardware Components
+
+- Raspberry Pi 4 Model B (4GB RAM)
+- Sense HAT with accelerometer and LED matrix
+- Camera Module V2 for capturing video and photos
+
+##### How It Worked
+
+- The Camera Thread streamed video into a circular buffer. Upon crash detection, it saved the last 10 seconds of footage and captured 5 still images.
+- The Crash Detection Thread monitored accelerometer data and looked for sudden changes in motion. If a threshold was exceeded, it triggered crash routines.
+- The Communication Thread operated a Telegram bot that handled user registration and distributed crash alerts and media.
+
+##### Crash Notification
+
+When a crash was detected, the system:
+
+- Sent a text alert, video, and photos to all registered Telegram users
+- Displayed a visual crash warning on the LED matrix
+
+![tinonininin](images/projects/dashcam/tinoninoini.jpeg)
+
+![tinoni](images/projects/dashcam/tinoni.gif)
+
+### Highlights
+
+- Working with the Python libraries for the Raspberry Pi is quite easy.
+- The Telegram integration was also quite easy.
+
+### Lowlights
+
+- Accidentally broke a camera 🙃.
+- Detecting a crash only using accelerometer data is not a solved problem as it is almost indistinguishable from a hard brake.
+
+### Lessons Learned
+
+- Developing code for a Raspberry Pi inside the running Raspberry Pi is not optimal.
 
 ## Palletizer Robotic Arm
 
