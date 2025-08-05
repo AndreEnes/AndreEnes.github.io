@@ -20,6 +20,10 @@ Here lies a collection of random thoughts and ideas.
 
 ![Truth](images/index/truf.gif)
 
+![peixeiras](images/bts/peixeiras.webp)
+
+![peixeiro](images/bts/peixeiro.webp)
+
 ## Shower Thoughts
 
 - An Applewatch does the same thing as my beautiful sensor system, expect it predicts faults in humans.
