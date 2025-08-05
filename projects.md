@@ -234,11 +234,12 @@ Despite facing major challenges with MSYS2 library installations, GUI management
 
 Due to time constraints and limited documentation for audio libraries, MP3 playback was not fully implemented, though the team gained the necessary technical understanding and could have completed it with 1–2 more days.
 
+![ronny](images/projects/siuuuutunes/cris_guitarra.jpg)
+
 ### Highlights
 
 - The name is amazing.
 - "Palpable" project with a GUI and a relatable objective.
--
 
 ### Lowlights
 
