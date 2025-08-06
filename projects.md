@@ -35,6 +35,26 @@ You can read the full dissertation here: [Dissertation](documents/SensorSystemFo
 
 ![testbed](images/projects/sensor_system/testbed.jpg)
 
+### Tech Explored
+
+#### Embedded Systems
+
+- Accelerometers
+- Digital and Analog Microphones
+- ADC
+- IR Temperature Sensors
+- WiFi
+- SD Card
+- EEPROM
+
+#### Data Analysis
+
+- Data Cleaning
+- Time-Series Data
+- Preprocessing
+- Signal Processing
+- ACABAR ISTO
+
 ### Highlights
 
 - Got to work on several different layers:
@@ -72,6 +92,16 @@ Take a look at the project in the [repo](https://github.com/AndreEnes/argentina-
 
 ![argentina](images/projects/argentina/screenshot.png)
 
+### Tech Explored
+
+- Regression Problems
+- Streamlit
+- Gradient Assisted Boost Trees
+- Hyperparameter Optimization
+- Simulated Annealing
+- SHAP
+- Data Processing
+
 ### Highlights
 
 - This internship was right after I had my Machine Learning class, so I got to work on a real project with it right away.
@@ -106,6 +136,13 @@ Extensive testing demonstrated that the EKF accurately estimated the UAV’s pos
 You can check the report [here (in spanish)](documents/ROS_EKF_WITH_BEACONS.pdf).
 
 ![simulation](images/projects/ekf/simulation.jpg)
+
+### Tech Explored
+
+- ROS
+- WeBots
+- [FilterPy](https://filterpy.readthedocs.io/en/latest/#)
+- Extended Kalman Filter
 
 ### Highlights
 
@@ -151,6 +188,13 @@ Check the [report](documents/Ancelotti_Robot.pdf) for more information.
 
 ![lindu](images/projects/ancelotti/image21.gif)
 ![final](images/projects/ancelotti/ancelotti.gif)
+
+### Tech Explored
+
+- MediaPipe's FaceMesh
+- Face Capturing
+- Digital to Analog interface
+- Servo motor control
 
 ### Highlights
 
@@ -241,6 +285,13 @@ When a crash was detected, the system:
 
 ![tinoni](images/projects/dashcam/tinoni.gif)
 
+### Tech Explored
+
+- Raspberry Pi
+- Time-Series data
+- Crash detection
+- Telegram bot thjindfs
+
 ### Highlights
 
 - Working with the Python libraries for the Raspberry Pi is quite easy.
@@ -274,6 +325,14 @@ Here is a picture of the prototype (without any of the coloured pieces):
 And here is the hardware schematic:
 
 ![schematic](images/projects/palletizer/schematic.png)
+
+### Tech Explored
+
+- AVR
+- Servo motor control
+- Color sensor
+- Embedded Programming
+- Electronics
 
 ### Highlights
 
@@ -310,6 +369,17 @@ Despite facing major challenges with MSYS2 library installations, GUI management
 Due to time constraints and limited documentation for audio libraries, MP3 playback was not fully implemented, though the team gained the necessary technical understanding and could have completed it with 1–2 more days.
 
 ![ronny](images/projects/siuuuutunes/cris_guitarra.jpg)
+
+### Tech Explored
+
+- C++
+- GTK
+- Glade
+- Postgres
+- UML Diagrams
+- OOP
+- Audio Playback
+- Databases
 
 ### Highlights
 
