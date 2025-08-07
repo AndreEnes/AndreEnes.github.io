@@ -14,15 +14,15 @@ This section is not strictly "professional". Let a bit loose. Check out the [Pro
 
 Who doesn't appreciate a more honest view on one's work? Look at the uncropped and very compressed profile pic:
 
-![handoemso](images/index/compress.jpg)
+![handoemso](/images/index/compress.jpg)
 
 Here lies a collection of random thoughts and ideas.
 
-![Truth](images/index/truf.gif)
+![Truth](/images/index/truf.gif)
 
-![peixeiras](images/bts/peixeiras.webp)
+![peixeiras](/images/bts/peixeiras.webp)
 
-![peixeiro](images/bts/peixeiro.webp)
+![peixeiro](/images/bts/peixeiro.webp)
 
 ## Shower Thoughts
 
