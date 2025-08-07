@@ -1,11 +1,10 @@
 ---
 layout: default
 title: Projects
-permalink: /projects/
 nav_order: 7
 ---
 
-[Back](/projects/)
+[Back](/projects.md)
 
 ## Extended Kalman Filter for a Quadcopter
 
