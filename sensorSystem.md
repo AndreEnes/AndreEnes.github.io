@@ -25,21 +25,35 @@ You can read the full dissertation here: [Dissertation](/documents/SensorSystemF
 
 #### Embedded Systems
 
-- Accelerometers
-- Digital and Analog Microphones
-- ADC
-- IR Temperature Sensors
-- WiFi
-- SD Card
-- EEPROM
+- Accelerometers, microphones (analog, digital, ultrasonic), IR temperature sensors
+- Microcontrollers (Teensy, ESP-12E), ADC, EEPROM, SD card
+- WiFi communication, power management, level shifting
+- Custom hardware testbeds
 
-#### Data Analysis
+#### Signal Processing
 
-- Data Cleaning
-- Time-Series Data
-- Preprocessing
-- Signal Processing
-- ACABAR ISTO
+- Discrete and Short-Time Fourier Transforms (DFT, STFT)
+- Wavelet, Empirical Mode, and Hilbert-Huang Transforms
+- Envelope detection, signal filtering, time-frequency analysis
+
+#### Machine Learning & Data Analysis
+
+- Time-series preprocessing, outlier removal
+- Supervised models: XGBoost, Decision Trees
+- Unsupervised models: Isolation Forest, Autoencoders
+- Anomaly detection, dataset creation, evaluation metrics
+
+#### Software & Infrastructure
+
+- Firmware design with finite state machines
+- SD card logging, real-time WiFi streaming
+- Database integration, model automation scripts
+
+#### Research & System Design
+
+- Predictive vs. preventive vs. reactive maintenance
+- Sensor selection and cost-performance analysis
+- Integration with legacy industrial systems
 
 ### Highlights
 
