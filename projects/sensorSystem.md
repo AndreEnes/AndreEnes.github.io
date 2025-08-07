@@ -1,10 +1,11 @@
 ---
 layout: default
 title: Projects
+permalink: /projects/
 nav_order: 5
 ---
 
-[Back](/projects.md)
+[Back](/projects/)
 
 ## Sensor System for Predictive Maintenance
 

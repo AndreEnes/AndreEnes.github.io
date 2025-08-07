@@ -1,10 +1,11 @@
 ---
 layout: default
 title: Projects
+permalink: /projects/
 nav_order: 12
 ---
 
-[Back](/projects.md)
+[Back](/projects/)
 
 ## Palletizer Robotic Arm
 

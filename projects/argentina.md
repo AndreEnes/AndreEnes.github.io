@@ -1,10 +1,11 @@
 ---
 layout: default
 title: Projects
+permalink: /projects/
 nav_order: 6
 ---
 
-[Back](/projects.md)
+[Back](/projects/)
 
 ## ML Regression Toolkit (Internship)
 
