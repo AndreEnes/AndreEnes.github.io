@@ -1,10 +1,11 @@
 ---
 layout: default
 title: Projects
+permalink: /projects/
 nav_order: 10
 ---
 
-[Back](/projects.md)
+[Back](/projects/)
 
 ## SCARA Robot
 
