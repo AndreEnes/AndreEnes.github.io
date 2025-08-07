@@ -10,4 +10,4 @@ nav_order: 1
 
 LinkedIn is a battleground. Maybe a quieter page will make me share my work with less anxiety.
 
-![Pavão](images/index/peacock.webp)
+![Pavão](/images/index/peacock.webp)
