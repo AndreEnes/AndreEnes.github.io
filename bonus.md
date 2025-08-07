@@ -1,11 +1,10 @@
 ---
 layout: default
 title: Projects
-permalink: /projects/
 nav_order: 9
 ---
 
-[Back](/projects/)
+[Back](projects.md)
 
 ## Bonus
 

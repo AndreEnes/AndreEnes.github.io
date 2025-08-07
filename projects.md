@@ -1,7 +1,6 @@
 ---
 layout: default
 title: Projects
-permalink: /projects/
 nav_order: 2
 ---
 
@@ -9,12 +8,12 @@ nav_order: 2
 
 ## List
 
-- [Sensor System for Predictive Maintenance](/projects/sensorSystem.md)
-- [ML Regression Toolkit](/projects/argentina.md)
-- [Extended Kalman Filter for a Quadcopter](/projects/quadcopter.md)
-- [Ancelotti Robot](/projects/ancelotti.md)
-- [SCARA Robot](/projects/scara.md)
-- [Dashcam](/projects/dashcam.md)
-- [Palletizer Robotic Arm](/projects/palletizer.md)
-- [SiiuuTunes](/projects/siiiuuutunes.md)
-- [Bonus](/projects/bonus.md)
+- [Sensor System for Predictive Maintenance](sensorSystem.md)
+- [ML Regression Toolkit](argentina.md)
+- [Extended Kalman Filter for a Quadcopter](quadcopter.md)
+- [Ancelotti Robot](ancelotti.md)
+- [SCARA Robot](scara.md)
+- [Dashcam](dashcam.md)
+- [Palletizer Robotic Arm](palletizer.md)
+- [SiiuuTunes](siiiuuutunes.md)
+- [Bonus](bonus.md)
