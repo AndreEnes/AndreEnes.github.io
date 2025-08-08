@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Projects
+title: Sensor System for Industrial Predictive Maintenance
 nav_order: 5
 ---
 

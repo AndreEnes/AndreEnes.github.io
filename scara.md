@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Projects
+title: SCARA Robotic Arm Project
 nav_order: 10
 ---
 

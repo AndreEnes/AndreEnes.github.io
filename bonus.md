@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Projects
+title: Bonus
 nav_order: 9
 ---
 

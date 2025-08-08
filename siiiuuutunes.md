@@ -1,12 +1,12 @@
 ---
 layout: default
-title: Projects
+title: SiiuuuTunes
 nav_order: 13
 ---
 
 [Back](projects.md)
 
-## SiiuuTunes
+## SiiuuuTunes
 
 The name was inspired by the group name: **_C++R7_**. The best name and what one should be inspired to be.
 

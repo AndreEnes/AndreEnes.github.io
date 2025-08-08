@@ -13,7 +13,7 @@ nav_order: 2
 - [Beacon-Based 3D Localization of a Quadcopter Using Extended Kalman Filter](quadcopter.md)
 - [Ancelotti Robot: Real-Time Facial Gesture Animatronic](ancelotti.md)
 - [SCARA Robotic Arm Project](scara.md)
-- [Dashcam](dashcam.md)
+- [IoT Dashcam Crash Detection System](dashcam.md)
 - [Colour-Sorting Palletizer Robotic Arm](palletizer.md)
 - [SiiuuTunes](siiiuuutunes.md)
 - [Bonus](bonus.md)

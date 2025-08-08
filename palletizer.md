@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Projects
+title: Colour-Sorting Palletizer Robotic Arm
 nav_order: 12
 ---
 

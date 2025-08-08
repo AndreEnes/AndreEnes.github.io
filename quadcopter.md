@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Projects
+title: Beacon-Based 3D Localization of a Quadcopter Using Extended Kalman Filter
 nav_order: 7
 ---
 

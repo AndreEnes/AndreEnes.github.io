@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Projects
+title: argentina-opt: Machine Learning Optimization Toolkit
 nav_order: 6
 ---
 

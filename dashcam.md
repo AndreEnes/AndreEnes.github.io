@@ -1,14 +1,12 @@
 ---
 layout: default
-title: Projects
+title: IoT Dashcam Crash Detection System
 nav_order: 11
 ---
 
 [Back](projects.md)
 
-## Dashcam
-
-IoT Crash Detection Camera System
+## IoT Dashcam Crash Detection System
 
 In 2019, over 141,000 traffic victims were reported in Spain. Identifying the cause of an accident was often a complex task, especially without reliable evidence. DASHCAM was developed to address this issue by combining IoT technology with real-time data capture, offering automatic visual documentation of accidents.
 

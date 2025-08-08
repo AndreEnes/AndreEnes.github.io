@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Projects
+title: Ancelotti Robot: Real-Time Facial Gesture Animatronic
 nav_order: 8
 ---
 
