@@ -18,6 +18,14 @@ Who doesn't appreciate a more honest view on one's work? Look at the uncropped a
 
 Here lies a collection of random thoughts and ideas.
 
+## Hobbies
+
+Photography is cool. Flash photography is also cool. Here are some pictures:
+
+
+
+![Pavão](/images/index/peacock.webp)
+
 ![Truth](/images/index/truf.gif)
 
 ![peixeiras](/images/bts/peixeiras.webp)

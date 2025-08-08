@@ -1,3 +1,3 @@
-# Project Peacock
+# Uébulógue
 
-This is my attempt to get some more visibility on my portfolio.
+This is my attempt to get some more visibility on my portfolio 🦚.

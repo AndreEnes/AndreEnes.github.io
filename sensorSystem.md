@@ -6,7 +6,7 @@ nav_order: 5
 
 [Back](projects.md)
 
-## Sensor System for Predictive Maintenance
+## Sensor System for Industrial Predictive Maintenance
 
 Sensor module design, embedded development, and ML for predictive maintenance.  
 It was developed in the scope of the [GreenAuto](https://www.agendagreenauto.pt/projeto/) Project.

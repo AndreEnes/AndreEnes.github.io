@@ -6,7 +6,7 @@ nav_order: 8
 
 [Back](projects.md)
 
-## Ancelotti Robot
+## Ancelotti Robot: Real-Time Facial Gesture Animatronic
 
 This project explored the integration of facial gesture recognition and animatronic control by developing a system in which a robotic head imitated human facial movements in real time. Using a webcam and [MediaPipe's Face Mesh](https://ai.google.dev/edge/mediapipe/solutions/vision/face_landmarker), facial landmarks were detected and analyzed to track expressions such as eye movement, eyebrow position, and mouth motion.
 

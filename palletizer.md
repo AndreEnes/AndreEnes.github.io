@@ -6,7 +6,7 @@ nav_order: 12
 
 [Back](projects.md)
 
-## Palletizer Robotic Arm
+## Colour-Sorting Palletizer Robotic Arm
 
 This project involved building and programming a robotic arm in a "Palletizer" configuration capable of sorting three objects based on their color. The system used a TCS3200 color sensor to identify each object's color, and a set of SG90 servo motors to control the robotic arm's movements. Once identified, the object was placed in the corresponding position for its color.
 

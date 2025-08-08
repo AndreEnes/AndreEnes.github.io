@@ -6,7 +6,7 @@ nav_order: 7
 
 [Back](projects.md)
 
-## Extended Kalman Filter for a Quadcopter
+## Beacon-Based 3D Localization of a Quadcopter Using Extended Kalman Filter
 
 This project focused on 3D localization of an aerial robot (UAV) using an Extended Kalman Filter (EKF) with beacon-based distance measurements. It was implemented using Python, C++, ROS, and Webots to estimate the UAV’s position by fusing noisy data from static beacons with a motion model. The work included:
 

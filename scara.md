@@ -6,7 +6,7 @@ nav_order: 10
 
 [Back](projects.md)
 
-## SCARA Robot
+## SCARA Robotic Arm Project
 
 This project involved modeling and controlling a SCARA robotic arm using direct and inverse kinematics, Jacobian analysis, and trajectory planning.
 

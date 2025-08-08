@@ -6,7 +6,7 @@ nav_order: 6
 
 [Back](projects.md)
 
-## ML Regression Toolkit (Internship)
+## argentina-opt: Machine Learning Optimization Toolkit
 
 This project was developed to solve generic regression problems by finding optimal input parameters for a desired target output using machine learning. It employed the XGBoost library's XGBRegressor for predictions, with hyperparameter tuning handled by Hyperopt, and feature optimization performed using simulated annealing via SciPy’s dual_annealing.
 
@@ -28,7 +28,7 @@ Take a look at the project in the [repo](https://github.com/AndreEnes/argentina-
 - Hyperparameter Optimization
 - Simulated Annealing
 - SHAP
-- Data Processing
+- Data Processing and Transformation
 
 ### Highlights
 
