@@ -2,6 +2,6 @@ title: Uébulógue - A Portfolio for André Enes
 description: A personal portfolio by André Enes, showcasing projects, experiences and thoughts.
 author: André Enes
 email: andreenes222@gmail.com
-theme: jekyll-theme-minimal
+theme: jekyll-theme-cayman
 markdown: kramdown
 permalink: pretty
