@@ -15,6 +15,7 @@ For some of the ones I participated in, I don't have many remaining evidences, b
 
 ## Hackathons
 
+- [What is this EBEC thing?](#what-is-this-ebec-thing)
 - [Media Dive - Aveiro Tech City](#media-dive---aveiro-tech-city)
 - [Hackacity 2023](#hackacity-2023)
 - [6th Cassini Hackathon](#6th-cassini-hackathon)
@@ -29,6 +30,21 @@ For some of the ones I participated in, I don't have many remaining evidences, b
 - [SciTech 2019](#scitech-2019)
 - [PwC Challenge](#pwc-challenge)
 - [EBEC Porto 2019](#ebec-porto-2019)
+
+## What is this EBEC thing?
+
+EBEC stands for (used to stand for) European BEST Engineering Competition. Which is organised by [BEST](https://best.eu.org/index.jsp), which, in turn, stands for Board of European Students of Technology. It is a student organisation spread out through Europe with hubs in lots of different countries, from Estonia to Portugal.
+
+EBEC follows a pyramid structure: each local hub hosts its own challenge, with winning teams advancing to a national round and, ultimately, the European final. The competition maintains a standard format across Europe:
+
+- 24 hours
+- 2 challenges (1 per team):
+  - Case Study: coming up with solutions for a set of 2 problems (business, logistics or environment related).
+  - Team Design: building a physical prototype to solve a certain problem, according to a set of restrictions.
+
+While the format evolves each year based on BEST’s financial resources and other factors, EBEC Porto consistently stands out. It remains the largest engineering competition in Portugal, attracting more than 250 participants annually.
+
+I first participated in 2019, in Team Design, and I had such a great time that I joined BEST and helped organise more 4 editions of the competition, which is why EBEC shows up so often in this section.
 
 ## Media Dive - Aveiro Tech City
 
@@ -48,30 +64,24 @@ Smart city data challenge on CO₂ reduction – Porto Digital.
 
 ## 6th Cassini Hackathon
 
-- **Goal**: Use EU space technologies (Copernicus, Galileo, EGNOS, future IRIS2 services) to create impactful solutions for international development & humanitarian aid.
-- **Format**: Held simultaneously in 11 European locations + Ukraine.
+- **Goal**: Develop impactful solutions for international development and humanitarian aid using EU space technologies (Copernicus, Galileo, EGNOS, and future IRIS2 services).
+- **Format**: 48-hour hackathon held simultaneously in 11 European cities plus Ukraine, culminating in a working prototype and presentation.
 
-### Challenges
+### Challenge: Sustainable Infrastructure Development
 
-#### Sustainable Infrastructure Development
-
-- Spatial planning, renewable energy forecasting, transportation/mobility infrastructure, critical infrastructure monitoring, disaster damage assessment.
-
-### Food Security & Clean Water
-
-- Anticipatory action for extreme weather, agricultural yield forecasts, emergency logistics, groundwater access/management, water quality monitoring.
-
-### Forced Migration
-
-- Tracking population movements, disaster planning, logistics for displaced communities, desertification impact, coastal erosion monitoring.
+Focus areas included spatial planning, renewable energy forecasting, transportation and mobility infrastructure, critical infrastructure monitoring, and disaster damage assessment.
 
 ### Data Sources
 
-- Copernicus: Earth observation data for environment, climate, and disaster monitoring.
-- Galileo: High-precision global navigation.
-- EGNOS: Improves GNSS accuracy.
-- IRIS2: Future broadband & secure communications.
-- GOVSATCOM & Space Situational Awareness: For future editions.
+- **Copernicus**: Earth observation data for environmental, climate, and disaster monitoring.
+- **Galileo**: High-precision global navigation.
+- **EGNOS**: Enhanced GNSS accuracy.
+- **IRIS2**: Upcoming broadband and secure communications.
+- **GOVSATCOM & Space Situational Awareness**: Planned for future editions.
+
+### Our Project
+
+We built a web-based tool to provide real-time navigation for emergency vehicles (ambulances, fire engines) during disasters like wildfires or landslides. Standard navigation systems may not reflect blocked or unsafe roads, so our solution leveraged [OpenStreetMap](https://www.openstreetmap.org/about) and live data from [_Copernicus_](https://www.copernicus.eu/en) and [_Galileo_](https://defence-industry-space.ec.europa.eu/eu-space/galileo-satellite-navigation_en) to dynamically re-route vehicles from point A to B. Another team had a similar concept, which affected our scoring, but the experience was rewarding.
 
 ## Datattack 2023
 
@@ -79,22 +89,48 @@ Smart city data challenge on CO₂ reduction – Porto Digital.
 
 ## EBEC Porto 23 as an Organizer
 
+In another edition of EBEC, I joined as an Electronics Assistant. Before the competition, I gave a short lecture introducing participants to the basics of Arduino, along with examples of how they could integrate it into their prototypes. The session was mandatory and held a few days before the event. With over 200 students obliged to attend, the atmosphere was… let’s say lively. Lots of noise, but I did my best.
+
+During the competition itself, I was constantly on the move, helping teams troubleshoot. Some had never built a circuit before, while others were wrestling with malfunctioning Arduinos. It was rewarding to see their relief and gratitude when we got things working. The 2 a.m. random support calls? Less fun.
+
 ## EESTECH Challenge Porto 2022
 
-Machine Learning competition on color blindness detection.
+This was a machine learning competition focused on detecting colour blindness, organised by EESTECH—a student group dedicated to electronics and software. The challenge revolved around improving the accessibility of the main sponsor’s website for users with colour vision deficiencies.
+
+Our team created a prototype that dynamically adjusted the site’s colour palette. Users could select their type of colour blindness, and our tool would automatically choose complementary colours and tweak their values to maximise visibility and contrast.
+
+We finished in third place and received an internship offer from the sponsor. I opted instead to intern at Digi2Laboratory at FEUP. Interestingly, the team I usually compete with took first place and progressed to the European final in Milan. They didn't win the final, which made me a bit less jealous.
 
 ## EBEC Iberia as an Organizer
+
+This was the regional round before the European EBEC final. I wasn’t just the electronics helper as I did a bit of everything: setting up rooms, cleaning, and even cooking for the teams. The whole event had a great team spirit, despite the many mishaps. Also got to do a group yoga session, which turned out to be a fun way to unwind from all the chaos.
 
 ## EBEC Porto 22 as an Organizer
 
 ## BEST IT Competition 2021
 
+The objective of the competition was to develop a project that would assist individuals with disabilities. Each team was allocated a budget of €100 to spend on electronic components, and the event followed a 48-hour format.
+
+Our team created a prototype designed to help blind people navigate without the use of a cane. The device utilised a distance sensor mounted on two servo motors to scan the environment, functioning somewhat like a rudimentary LIDAR system. When an object was detected within a specified range, an array of buzzers emitted a beep, indicating the position of the nearest obstacle. The volume of the beep increased as the object drew closer.
+
+Although we did not win the main competition, we did secure victory in the mini meme contest. The event took place during the Covid pandemic, and I suspect I may have contracted the virus by the end. Not ideal...
+
 ## EBEC Porto 21 as an Organizer
 
 ## YML Hackathon - IKEA
 
+This hackathon was more of a business-oriented project, with no actual "hacking" involved. Sponsored by IKEA, the challenge focused on analysing their operations in Portugal and proposing strategies to increase revenue.
+
+Our team examined IKEA’s online business, comparing the order process, shipping options, and pricing with those of competitors. One particularly odd finding was that "Click & Collect" at a store was more expensive than home delivery, whereas competitors maintained consistent pricing for both options. The IKEA representatives were not impressed by our criticism of this policy.
+
+Although we did not win, it was an enjoyable opportunity to tackle a business-focused challenge.
+
 ## SciTech 2019
 
 ## PwC Challenge
+
+Business case challenge focused on a fictional cereal brand in the European market. Our team received background information and was tasked with developing a strategic plan for the brand’s future. The format was engaging: we were confined to a room for two hours, without internet access, and had to prepare our presentation using only paper sheets.
+
+Although we didn’t win, it was a valuable introduction to business case studies and strategic thinking under pressure.
 
 ## EBEC Porto 2019
