@@ -62,6 +62,8 @@ We didn’t win. The winning project was basically the same idea, just better.
 
 Smart city data challenge on CO₂ reduction – Porto Digital.
 
+This hackathon's objective was to dive into the city of Porto's data and to find ways to reduce the city's CO₂ production
+
 ## 6th Cassini Hackathon
 
 - **Goal**: Develop impactful solutions for international development and humanitarian aid using EU space technologies (Copernicus, Galileo, EGNOS, and future IRIS2 services).

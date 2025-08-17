@@ -71,6 +71,9 @@ You can read the full dissertation here: [Dissertation](/documents/SensorSystemF
 
 - I only noticed that there was a typo in the title the day before presenting the dissertation. Still feel a bit embarrassed.
 - I didn't have a lot of support, so I felt a bit lost, especially in the beginning.
+- Researching related concepts was challenging due to significant overlap and subtle differences between them. To clarify these relationships, I even created a diagram that maps out how the concepts connect:
+
+![nomenclature](/images/projects/sensor_system/nomenclature.png)
 
 ### Lessons Learned
 

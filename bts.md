@@ -22,8 +22,6 @@ Here lies a collection of random thoughts and ideas.
 
 Photography is cool. Flash photography is also cool. Here are some pictures:
 
-
-
 ![Pavão](/images/index/peacock.webp)
 
 ![Truth](/images/index/truf.gif)
@@ -37,7 +35,7 @@ Photography is cool. Flash photography is also cool. Here are some pictures:
 - An Applewatch does the same thing as my beautiful sensor system, expect it predicts faults in humans.
 - Can people that speak tonal languages be sarcastic? I refuse to google this.
 - Guarda-redes de andebol tem o equipamento mais ressolha à face da terra.
-- STMicroelectronics' website feels like this [video](https://www.youtube.com/watch?v=iy63PEgmm8w).
+<!-- - STMicroelectronics' website feels like this [video](https://www.youtube.com/watch?v=iy63PEgmm8w). -->
 - Prince died of a fentanyl overdose in 2016, pioneer through and through.
 - Long-haired men must be confident in their genetics. Or must be ready to let the hair go when the time comes.
 - People turn almost anything into nostalgia, look at Pen&Pixel album covers.
