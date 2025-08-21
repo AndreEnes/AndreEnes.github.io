@@ -25,7 +25,7 @@ For some of the competitions I took part in, I no longer have much evidence or d
 - [EBEC Porto 23 as an Organizer](#ebec-porto-23-as-an-organizer)
 - [Datattack 2023](#datattack-2023)
 - [6th Cassini Hackathon](#6th-cassini-hackathon)
-- [Hackacity 2023](#hackacity-2023)
+- [Hackacity 2023 - Smart City Data Challenge](#hackacity-2023---smart-city-data-challenge)
 - [Media Dive - Aveiro Tech City](#media-dive---aveiro-tech-city)
 
 ## What is this EBEC thing?
@@ -124,6 +124,10 @@ The topic turned out to be much harder than we had expected, and many teams quit
 
 I really enjoyed this experience and could write much more about it, but it would be too lengthy for this page.
 
+Here is me having fun:
+
+![speed](/images/hackathons/ebec22_speed.png)
+
 ## EBEC Iberia as an Organizer
 
 This was the regional round before the European EBEC final and after the EBEC I had help organise, so the winning team from Porto also participated. I wasn’t just the electronics helper as I did a bit of everything: setting up rooms, cleaning, and even cooking for the teams. The whole event had a great team spirit, despite the many mishaps. Also got to do a group yoga session, which turned out to be a fun way to unwind from all the chaos.
@@ -169,11 +173,13 @@ Focus areas included spatial planning, renewable energy forecasting, transportat
 
 We built a web-based tool to provide real-time navigation for emergency vehicles (ambulances, fire engines) during disasters like wildfires or landslides. Standard navigation systems may not reflect blocked or unsafe roads, so our solution leveraged [OpenStreetMap](https://www.openstreetmap.org/about) and live data from [_Copernicus_](https://www.copernicus.eu/en) and [_Galileo_](https://defence-industry-space.ec.europa.eu/eu-space/galileo-satellite-navigation_en) to dynamically re-route vehicles from point A to B. Another team had a similar concept, which affected our scoring, but the experience was rewarding.
 
-## Hackacity 2023
+## Hackacity 2023 - Smart City Data Challenge
 
-Smart city data challenge on CO₂ reduction – Porto Digital.
+This hackathon (organised by Porto Digital) aimed to explore the city of Porto’s data to identify ways of reducing CO₂ emissions. The dataset focused mainly on traffic, including metro occupancy, bus stops and passenger counts, as well as vehicle data collected from 15 sensors across the city.
 
-This hackathon's objective was to dive into the city of Porto's data and to find ways to reduce the city's CO₂ production
+Our team focused on the fact that the sensors alone were insufficient to estimate traffic across the entire city. To address this, we combined the sensor data with bus passenger data. The idea was that if more passengers were on buses, it was likely that overall traffic in the city was also higher. For example, during rush hour there are usually both more buses and more cars on the road.
+
+The competition had two rounds of presentations. Making it through the first round placed you in the top 10, with the chance to present your project to city councillors who could actually influence policy. Our team reached the top 10, but unfortunately one critical slide caused our work to be misunderstood. It mistakenly suggested that “more buses on the road equals more cars on the road.” I was the one who wrote it, and we only realised the problem when I read it aloud in front of about 100 people. Although we did not win, even the winning teams told us that they thought our idea was really interesting.
 
 ## Media Dive - Aveiro Tech City
 
