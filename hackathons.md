@@ -6,12 +6,9 @@ nav_order: 4
 
 [Home](index.md)
 
-## ⚠️ **_This section is still under construction_** ⚠️
+I really enjoy hackathons and all sorts of random competitions. I love the feeling of being fully focused on solving a challenge. It is a pity that most of them are mainly designed for university students.
 
-![baby](/images/hackathons/underConstruction.gif)
-
-I love hackathons and random competitions. Being really focused is awesome. It's a shame that most of them are intended for university students.
-For some of the ones I participated in, I don't have many remaining evidences, but I can recall them, at least.
+For some of the competitions I took part in, I no longer have much evidence or documentation, but I can still recall the experiences, thankfully.
 
 ## Hackathons
 
@@ -111,11 +108,25 @@ Although we did not win the main competition, we did secure victory in the mini 
 
 ## EBEC Porto 22 as an Organizer
 
-Due to some university administrative problems, I was supposed to go on Erasmus in 2021, but I had to cancel it. At that point in time, there were no more interesting roles to apply for at BEST, so I re-applied to be "Topic Responsible" in October 2021. This time, the challenge was most certainly going to be to build a physical device, but we were not completely sure, so 
+Due to some administrative issues at my university, I was supposed to go on Erasmus in 2021 but had to cancel it. By then, there were no longer any interesting roles available at BEST, so in October 2021 I decided to re-apply as a "Topic Responsible." This time, the challenge was most likely going to involve building a physical device, although we were not completely certain at first.
+
+Fortunately, we were allowed to host the competition at FEUP, but strict health measures were still in place and everyone had to wear face masks. Masks were only lifted a few weeks after the competition ended. It was a strange period because most of the people who had previously organized a live edition of the competition had already left the organization, taking much of the accumulated knowledge with them. As a result, we had to figure out most things ourselves, which was especially challenging given that the competition involved more than 200 participants.
+
+The Public Relations department of BEST secured a partnership with a company called Switch, which wanted to sponsor the topic. Switch developed portable ATM software, so we proposed designing an ATM as the final challenge. In the middle of preparing the topic, we learned that Switch had been acquired by another company, Saltpay, which has since been acquired by yet another one, Teya. Fortunately, Saltpay kept the same challenge. The task for participants was to build a device where users could select an amount to withdraw and, after inserting a “credit card,” receive that amount in “Saltpay Bucks” and “Saltpay Coins.”
+
+You can look at the [competition guide here](/documents/[Guião]ATMMachine.pdf).
+
+Before the competition began, we had to present the topics to give participants an overview of what was planned. I made a big mistake during that presentation: I strongly encouraged every team to use electronic components and reassured them that they did not need to worry because I would personally help with any issues. That day I learned how powerful it is to be on a podium because people really take your words seriously. From the moment the 24-hour challenge started, I was overwhelmed with questions, technical issues, and complaints about the quality of the materials. However, I also discovered how rewarding it is to help. Participants were extremely grateful whenever I fixed their problems, and to them it felt almost magical, like when I simply changed the bootloader settings on an Arduino and suddenly their project worked.
+
+During the competition, it was complete chaos. I was constantly running from room to room answering questions, fixing broken circuits, gathering organisers to clean up, reminding participants to follow the rules, and asking them to keep their masks on. I did not even have time to join the yoga class, which was quite sad.
+
+The topic turned out to be much harder than we had expected, and many teams quit before the competition was over. Some did not even show up for their presentations, which meant they were disqualified. I am fairly sure the main reason was that they could not get the electronics to work and eventually gave up. Ironically, the winning team used no electronics at all.
+
+I really enjoyed this experience and could write much more about it, but it would be too lengthy for this page.
 
 ## EBEC Iberia as an Organizer
 
-This was the regional round before the European EBEC final. I wasn’t just the electronics helper as I did a bit of everything: setting up rooms, cleaning, and even cooking for the teams. The whole event had a great team spirit, despite the many mishaps. Also got to do a group yoga session, which turned out to be a fun way to unwind from all the chaos.
+This was the regional round before the European EBEC final and after the EBEC I had help organise, so the winning team from Porto also participated. I wasn’t just the electronics helper as I did a bit of everything: setting up rooms, cleaning, and even cooking for the teams. The whole event had a great team spirit, despite the many mishaps. Also got to do a group yoga session, which turned out to be a fun way to unwind from all the chaos.
 
 ## EESTECH Challenge Porto 2022
 
@@ -133,7 +144,9 @@ During the competition itself, I was constantly on the move, helping teams troub
 
 ## Datattack 2023
 
-24h data science challenge for Civil Protection – IEEE Porto.
+This competition (organised by IEEE Porto) focused on using data from the Portuguese Civil Protection Agency ([available here](https://github.com/centraldedados/protecao_civil)) to analyse and develop a tool that could support the Agency’s work. The dataset included records of different types of “occurrences” such as fires, road crashes, earthquakes, and drownings, each tied to a specific location.
+
+Our team developed a tool to predict where forest fires were most likely to spread by combining the provided occurrence data with mapped climate data. The final model was able to predict with remarkable accuracy whether a fire would spread to a neighbouring area. We got 2nd place, which we considered a good result.
 
 ## 6th Cassini Hackathon
 
