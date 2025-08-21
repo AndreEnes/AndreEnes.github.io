@@ -4,6 +4,7 @@ title: Curriculum Vitae
 nav_order: 14
 ---
 
+[Home](index.md)
 
 ## Work Experience  
 
@@ -48,7 +49,14 @@ nav_order: 14
 
 ---
 
-## Achievements  
+### EBEC Porto 2022 – Topic Responsible
+
+- Led a team in designing and managing a challenge that required participants to build a functional physical prototype addressing a practical problem.  
+- Coordinated and supported around 200 participants throughout the competition.
+
+---
+
+## Achievements
 
 🏆 **Top 10 – Hackacity 2023**: Smart city data challenge on CO₂ reduction – Porto Digital  
 🏆 **2nd Place – Datattack 2023**: 24h data science challenge for Civil Protection – IEEE Porto  
