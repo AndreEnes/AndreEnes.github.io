@@ -16,8 +16,8 @@ I am currently working as a Software Engineer at [Critical Techworks](https://ww
 
 This website showcases some of the projects I have worked on as well as the hackathons I have taken part in.
 
-Feel free to get in touch:
+## Contacts
 
-- 📧 [andreenes222@gmail.com](mailto:andreenes222@gmail.com)  
-- 🧮 LinkedIn – [AndreEnes](https://www.linkedin.com/in/andre-enes/)
-- 🩻 GitHub [profile](https://github.com/AndreEnes)
+- [andreenes222@gmail.com](mailto:andreenes222@gmail.com)  
+- LinkedIn – [AndreEnes](https://www.linkedin.com/in/andre-enes/)
+- GitHub [profile](https://github.com/AndreEnes)
