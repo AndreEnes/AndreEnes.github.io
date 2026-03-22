@@ -4,7 +4,7 @@ title: argentina-opt - Machine Learning Optimization Toolkit
 nav_order: 6
 ---
 
-[Back](projects.md)
+[Back](../)
 
 ## argentina-opt: Machine Learning Optimization Toolkit
 
@@ -47,5 +47,5 @@ Take a look at the project in the [repo](https://github.com/AndreEnes/argentina-
 ### Lessons Learned
 
 - Write code with how to test it in mind.
-- Google Colab was a killer idea.
+- Google Colab <3.
 - Put headphones on with no music to listen to office drama. It might help with sleepy 2 o'clocks.

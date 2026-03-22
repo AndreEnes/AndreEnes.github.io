@@ -4,7 +4,7 @@ title: Ancelotti Robot - Real-Time Facial Gesture Animatronic
 nav_order: 8
 ---
 
-[Back](projects.md)
+[Back](../projects/)
 
 ## Ancelotti Robot: Real-Time Facial Gesture Animatronic
 

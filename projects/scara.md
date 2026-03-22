@@ -4,7 +4,7 @@ title: SCARA Robotic Arm Project
 nav_order: 10
 ---
 
-[Back](projects.md)
+[Back](../)
 
 ## SCARA Robotic Arm Project
 

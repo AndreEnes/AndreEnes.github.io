@@ -4,7 +4,7 @@ title: Sensor System for Industrial Predictive Maintenance
 nav_order: 5
 ---
 
-[Back](projects.md)
+[Back](../)
 
 ## Sensor System for Industrial Predictive Maintenance
 

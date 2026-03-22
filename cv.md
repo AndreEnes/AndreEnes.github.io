@@ -4,7 +4,7 @@ title: Curriculum Vitae
 nav_order: 14
 ---
 
-[Home](index.md)
+[Home](../)
 
 ## Work Experience
 
@@ -83,7 +83,7 @@ nav_order: 14
 - **Portuguese** – Native
 - **English** – C2 (Cambridge Proficiency)
 - **Spanish** – B1 Certificate
-- **German** – A1 Certificate, currently studying for A2
+- **German** – A2 Certificate, currently studying for B1
 
 ---
 

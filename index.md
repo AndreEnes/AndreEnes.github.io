@@ -4,7 +4,7 @@ title: André Enes - Portfolio
 nav_order: 1
 ---
 
-[Projects](projects.md) | [Hackathons](hackathons.md) | [Curriculum Vitae](cv.md)
+[Projects](projects/) | [Hackathons](projects/hackathons/) | [Curriculum Vitae](cv/)
 
 ## André Enes
 

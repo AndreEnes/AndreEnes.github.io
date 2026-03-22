@@ -4,7 +4,7 @@ title: Colour-Sorting Palletizer Robotic Arm
 nav_order: 12
 ---
 
-[Back](projects.md)
+[Back](../)
 
 ## Colour-Sorting Palletizer Robotic Arm
 

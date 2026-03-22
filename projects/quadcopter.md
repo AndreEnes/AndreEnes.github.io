@@ -4,7 +4,7 @@ title: Beacon-Based 3D Localization of a Quadcopter Using Extended Kalman Filter
 nav_order: 7
 ---
 
-[Back](projects.md)
+[Back](../)
 
 ## Beacon-Based 3D Localization of a Quadcopter Using Extended Kalman Filter
 

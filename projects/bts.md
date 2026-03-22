@@ -4,11 +4,11 @@ title: Behind the Scenes
 nav_order: 3
 ---
 
-[Home](index.md)
+[Home](../)
 
 ## ⚠️ WARNING ⚠️
 
-This section is not strictly "professional". Let a bit loose. Check out the [Projects](projects.md) tab for that.
+This section is not strictly "professional". Let a bit loose. Check out the [Projects](../) tab for that.
 
 ## Behind the Scenes
 

@@ -4,7 +4,7 @@ title: Hackathons
 nav_order: 4
 ---
 
-[Home](index.md)
+[Home](../)
 
 I really enjoy hackathons and all sorts of random competitions. I love the feeling of being fully focused on solving a challenge. It is a pity that most of them are mainly designed for university students.
 
