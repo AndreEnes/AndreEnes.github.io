@@ -8,27 +8,38 @@ nav_order: 14
 
 ## Work Experience
 
-### Software Engineer – Critical Techworks
+### **Software Engineer | Critical Techworks (BMW Group)**
+*March 2024 – Present | Porto, Portugal*
 
-**September 2025 - Present**
+#### **BMW Crowd Data Collector - Edge Computing & WebAssembly Platform**
+*September 2025 – Present*
 
-- Developed a resource-constrained platform to run [WebAssembly](https://webassembly.org/) workloads in automotive ECUs.
-- Application of the findings from the [technical paper](https://ieeexplore.ieee.org/document/9231154) to enable deployment in millions of production vehicles, enhancing performance and reliability in real-world automotive environments.
+Contributing to a C++17 Posix-based hardware-agnostic framework designed to orchestrate [WebAssembly](https://webassembly.org/) workloads across BMW's next-generation ECUs. Joined an established team 2-3 years into development.
 
-**March 2024 – September 2025**
-
-- Part of the BMW [Crowd Data Collector project](https://www.bmwgroup.com/en/innovation/connected-car/data-ecosystem.html).
-- Developed data collection and processing scripts optimized for resource-constrained automotive ECUs.
-- Implemented a code-generation tool to decode and parse legacy automotive communication protocols.
+* **Platform Support:** Contributed to permission-gated system services that manage the full lifecycle of sandboxed data-collection jobs.
+* **Quality & Reliability:** Supported production hardening using **ASAN/TSAN**, Valgrind, and **Coverity** static analysis; worked with rate limiting, RAM monitoring, and metrics subsystems to ensure in-vehicle application stability.
+* **Integration & Testing:** Maintained CI pipeline with dual CMake/Bazel builds and automated sanitizer/analysis checks for safety-critical automotive software.
+* **AUTOSAR Platform Metrics:** Implemented monitoring and metrics infrastructure for a classic AUTOSAR ECU platform, extracting data via hardware debuggers and transmitting over UDP; addressed low-level multi-core communication challenges; contributed to custom testing infrastructure.
 
 ---
+
+#### **BMW Crowd Data Collector**
+*March 2024 – September 2025*
+
+Contributed to the [BMW Crowd Data Collector](https://www.bmwgroup.com/en/innovation/connected-car/data-ecosystem.html) platform and SDK ecosystem.
+
+* **Safety-Critical Telemetry:** Developed embedded scripts for automotive data collection within resource-constrained systems.
+* **SDK & Code Generation:** Developed code generation tools that fetch manifest and API data to automatically generate automotive protocol handling code (including CAN message decoding); integrated with build pipelines and maintained alignment with platform APIs.
+* **DevOps & Quality:** Contributed to CI/CD infrastructure, quality gates, build automation, and release workflows.
 
 ### C++ Academy Trainee – Critical Techworks
 
 **January 2024 – March 2024**
 
-- Gained working knowledge of modern C++, focusing on OOP, basic concurrency concepts, and memory management.
-- Worked with CI/CD tools such as Git, Docker, and GitHub Actions in development and testing workflows.
+Gained foundational knowledge of modern C++ and professional development practices.
+
+* Gained working knowledge of modern C++, focusing on OOP, basic concurrency concepts, and memory management.
+* Worked with CI/CD tools such as Git, Docker, and GitHub Actions in development and testing workflows.
 
 ---
 
@@ -38,10 +49,10 @@ nav_order: 14
 
 **Dec 2022 – Oct 2023**
 
-- Designed a predictive maintenance sensor module for industrial machinery as part of the [GreenAuto](https://www.agendagreenauto.pt/projeto/) programme.
-- Led data collection and analysis processes.
-- Worked on embedded development: hardware integration, DSP, BLE communication, database ingestion, and ML-based anomaly detection.
-- Contributed to the University of Porto’s first project within the [GreenAuto](https://www.agendagreenauto.pt/projeto/) programme.
+Designed a predictive maintenance sensor module for industrial machinery as part of the [GreenAuto](https://www.agendagreenauto.pt/projeto/) programme.
+
+* Led data collection and analysis processes.
+* Worked on embedded development: hardware integration, DSP, BLE communication, database ingestion, and ML-based anomaly detection.
 
 ---
 
@@ -49,15 +60,19 @@ nav_order: 14
 
 **Jul 2022 – Sept 2022**
 
-- Built a Python toolkit to optimise ML regressors using XGBoost, SHAP, SciPy, and scikit-learn.
-- Developed an interactive Streamlit UI for parameter tuning and model visualisation.
+Built Python toolkit to optimize machine learning regressors.
+
+* Built a Python toolkit to optimise ML regressors using XGBoost, SHAP, SciPy, and scikit-learn.
+* Developed an interactive Streamlit UI for parameter tuning and model visualisation.
 
 ---
 
 ### EBEC Porto 2022 – Topic Responsible
 
-- Led a team in designing and managing a challenge that required participants to build a functional physical prototype addressing a practical problem.
-- Coordinated and supported around 200 participants throughout the competition.
+Led a team in designing and managing an engineering challenge for approximately 200 participants.
+
+* Led a team in designing and managing a challenge that required participants to build a functional physical prototype addressing a practical problem.
+* Coordinated and supported around 200 participants throughout the competition.
 
 ---
 
