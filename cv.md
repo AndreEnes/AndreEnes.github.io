@@ -8,48 +8,48 @@ nav_order: 14
 
 ## Core Technical Skills
 
-* **Languages:** C/C++ (Modern & Embedded), Python, TypeScript, AssemblyScript, Bash
-* **Tools & Platforms:** Git, Docker, CI/CD (GitHub Actions), CMake, Bazel, ROS, WebAssembly
-* **Quality & Safety:** ASAN/TSAN, Valgrind, Coverity Static Analysis
-* **Languages:** Portuguese (Native), English (C2), Spanish (B1), German (A2/B1)
-
-## Work Experience
-
-### **Software Engineer | Critical Techworks (BMW Group)**
-
-*March 2024 – Present*
-
-#### **BMW Crowd Data Collector - Edge Computing & WebAssembly Platform**
-
-*September 2025 – Present*
-
-Joined an established team to develop a hardware-agnostic C++14 Posix-based framework designed to orchestrate sandboxed WebAssembly workloads across next-generation BMW ECUs.
-
-* **Wasm Lifecycle:** Contributed to permission-gated system services that manage the full lifecycle of edge data-collection jobs.
-* **Production Hardening:** Supported production hardening using **ASAN/TSAN**, Valgrind, and **Coverity** static analysis; worked with rate limiting, RAM monitoring, and metrics subsystems to ensure in-vehicle application stability.
-* **AUTOSAR Platform Metrics:** Implemented monitoring and metrics infrastructure for a classic AUTOSAR ECU platform, extracting data via hardware debuggers and transmitting over UDP; addressed low-level multi-core communication challenges; contributed to custom testing infrastructure.
-* **Integration & Testing:** Maintained CI pipelines with dual CMake/Bazel builds and automated sanitizer/analysis checks for safety-critical automotive software.
+- **Programming Languages:** C/C++, Python, TypeScript, AssemblyScript, Bash, IEC 61131-3
+- **Tools & Platforms:** Git, Docker, CI/CD (GitHub Actions, Zuul), CMake, Bazel, ROS, WebAssembly
+- **Quality & Safety:** ASAN/TSAN, Valgrind, Static Analysis (Coverity, SonarQube)
+- **Languages:** Portuguese (Native), English (C2), Spanish (B1), German (A2/B1)
 
 ---
 
-#### **BMW Crowd Data Collector**
+## Work Experience
 
-*March 2024 – September 2025*
+### Software Engineer – Critical Techworks
 
-Contributed to the [BMW Crowd Data Collector](https://www.bmwgroup.com/en/innovation/connected-car/data-ecosystem.html) platform and SDK ecosystem.
+**January 2024 – Present**
 
-* **Code Generation & SDK Automation:** Developed TypeScript-based code generation tools that fetch manifest and API specifications to automatically generate automotive protocol handling code (including CAN message decoding). Integrated generated outputs into build pipelines with linting, unit, and integration testing to ensure quality and consistency.
-* **Developer Experience:** Improved developer productivity by automating repetitive packet decoding tasks, reducing manual implementation effort and mismatch risks across systems. Continuously evolved generation templates and configuration to maintain alignment with evolving platform APIs and use-case requirements.
-* **Safety-Critical Systems & DevOps:** Developed embedded scripts for telemetry collection in resource-constrained automotive systems. Contributed to CI/CD infrastructure, quality gates, and release workflows to support platform stability.
+#### Edge Computing & WebAssembly Platform
 
-### C++ Academy Trainee – Critical Techworks
+**September 2025 – Present**
+
+Developed BMW's in-vehicle data collection platform: a hardware-agnostic C++14 Posix-based framework that orchestrates sandboxed WebAssembly workloads across multiple ECU architectures, **deployed on every BMW vehicle produced since September 2025**. Worked across the platform core runtime, the WebAssembly execution engine, and a vehicle-specific platform variant.
+
+- **Platform Core:** Contributed to the cross-ECU foundation providing full job lifecycle management — receive, install, validate, execute, update, and uninstall — including job API interfaces, manifest handling, persistent data management, and diagnostics integration.
+- **WebAssembly Runtime:** Developed permission-gated system services within the JIT-compiled WebAssembly runtime, enabling sandboxed near-native execution of data-collection jobs with cross-ECU portability from a single compiled artifact.
+- **Vehicle Platform Variant:** Contributed to a platform variant deployed on next-generation vehicle ECUs, addressing platform identity separation across hardware lines, platform-specific message/data layout handling, and observability lifecycle via in-vehicle metrics and monitoring infrastructure.
+- **Production Hardening:** Drove production hardening using ASAN/TSAN, Valgrind, and Coverity static analysis; worked with rate limiting, RAM monitoring, and metrics subsystems to ensure in-vehicle application stability.
+- **AUTOSAR Platform Metrics:** Implemented monitoring and metrics infrastructure for a classic AUTOSAR ECU platform, extracting data via hardware debuggers and transmitting over UDP; addressed low-level multi-core communication challenges; contributed to custom testing infrastructure.
+- **Integration & Testing:** Maintained CI pipelines with dual CMake/Bazel builds and automated sanitizer/analysis checks for safety-critical automotive software.
+
+#### In-Vehicle Data Collection Jobs & SDK Ecosystem
+
+**March 2024 – September 2025**
+
+Developed in-vehicle data-collection jobs deployed across BMW's electric fleet, along with SDK tooling to accelerate job authoring — versioned per vehicle program and release.
+
+- **Job Development:** Designed and implemented vehicle-side data products encompassing trigger/activation logic, signal collection and processing pipelines, and backend delivery contracts with event routing to backend receivers.
+- **Code Generation & SDK Automation:** Developed TypeScript-based code generation tools that fetch manifest and API specifications to automatically generate automotive protocol handling code (including CAN message decoding). Integrated generated outputs into build pipelines with linting, unit, and integration testing to ensure quality and consistency.
+- **Developer Experience:** Improved developer productivity by automating repetitive packet decoding tasks, reducing manual implementation effort and mismatch risks across systems. Continuously evolved generation templates and configuration to maintain alignment with evolving platform APIs and use-case requirements.
+- **Safety-Critical Systems & DevOps:** Developed embedded scripts for telemetry collection in resource-constrained automotive systems. Contributed to CI/CD infrastructure, quality gates, and release workflows to support platform stability.
+
+#### C++ Academy
 
 **January 2024 – March 2024**
 
-Gained foundational knowledge of modern C++ and professional development practices.
-
-* Gained working knowledge of modern C++, focusing on OOP, concurrency concepts, and memory management.
-* Worked with CI/CD tools such as Git, Docker, and GitHub Actions in development and testing workflows.
+- Three-month intensive C++ programme (OOP, concurrency, memory management, CI/CD with Docker and GitHub Actions).
 
 ---
 
@@ -57,46 +57,46 @@ Gained foundational knowledge of modern C++ and professional development practic
 
 ### Research Scholarship – GreenAuto Programme – DIGI2 Laboratory, FEUP
 
-**Dec 2022 – Oct 2023**
+**December 2022 – October 2023**
+Designed and developed a wireless IoT sensor system for predictive maintenance on Automated Guided Vehicles and nearby machinery in an industrial setting as part of the [GreenAuto](https://www.agendagreenauto.pt/) project for automotive industry sustainability.
 
-Designed a predictive maintenance sensor module for industrial machinery as part of the [GreenAuto](https://www.agendagreenauto.pt/projeto/) programme.
-
-* Led data collection and analysis processes.
-* Worked on embedded development: hardware integration, DSP, BLE communication, database ingestion, and ML-based anomaly detection.
-
----
+- **Embedded Development:** Built firmware on Teensy and ESP-12E microcontrollers integrating accelerometers, digital/analog/ultrasonic microphones, and IR temperature sensors. Implemented signal processing pipelines (DFT, STFT, wavelet transforms), SD card logging, and real-time WiFi data streaming.
+- **Data Pipeline:** Collected vibration, acoustic, and temperature data from industrial AGVs and machines; designed preprocessing with time-domain features to minimize wireless transmission overhead and ingestion into database systems.
+- **ML Anomaly Detection:** Trained and deployed supervised models (XGBoost, Decision Trees) achieving highly accurate anomaly detection for fault identification. Evaluated unsupervised approaches (Isolation Forest, Autoencoders) and conducted comparative cost-performance analysis of sensor options.
+- **Outcome:** Completed full dissertation and presentation materials; demonstrated extension of Industry 4.0 capabilities to legacy equipment, reducing downtime and optimizing maintenance scheduling.
 
 ### Summer Internship – ML Toolkit – DIGI2 Laboratory, FEUP
 
-**Jul 2022 – Sept 2022**
+**July 2022 – September 2022**
 
-Built Python toolkit to optimize machine learning regressors.
+Built a Python toolkit for solving generic regression problems by finding optimal input parameters for desired target outputs. Designed with a modularized ML architecture to support integration with multiple frontends beyond the initial Streamlit UI.
 
-* Built a Python toolkit to optimise ML regressors using XGBoost, SHAP, SciPy, and scikit-learn.
-* Developed an interactive Streamlit UI for parameter tuning and model visualisation.
-
----
+- **Model Training & Optimization:** Implemented XGBoost regressors with automated hyperparameter tuning via Hyperopt and simulated annealing (SciPy's dual_annealing) for finding optimal parameter configurations.
+- **User Interface & Interpretability:** Developed an interactive Streamlit interface for model training, predictions, and parameter optimization. Integrated SHAP-based feature importance analysis with beeswarm plots for intuitive model explainability.
+- **System Features:** Supported both continuous and discrete variables, incremental model retraining for reduced computational overhead, JSON-based project configuration templates for reproducible workflows.
 
 ### EBEC Porto 2022 – Topic Responsible
 
-Led a team in designing and managing an engineering challenge for approximately 200 participants.
+**October 2021 – May 2022**
+Designed and executed the Team Design challenge for EBEC Porto 2022 (200+ participants, 24-hour format) in partnership with Saltpay (portable ATM software).
 
-* Led a team in designing and managing a challenge that required participants to build a functional physical prototype addressing a practical problem.
-* Coordinated and supported around 200 participants throughout the competition.
+- **Challenge:** Developed an ATM prototype challenge where participants build devices for withdrawal selection, card insertion, and token dispensing.
+- **Event Execution:** Coordinated 200+ participants at FEUP, provided technical support for electronics integration, circuit troubleshooting, and hardware issues.
+- **Outcome:** Successfully delivered Portugal's largest engineering competition.
 
 ---
 
 ## Achievements
 
-* **Top 10 – Hackacity 2023**: Smart city data challenge on CO₂ reduction – Porto Digital
-* **2nd Place – Datattack 2023**: 24h data science challenge for Civil Protection – IEEE Porto
-* **3rd Place – EESTEC Challenge Porto 2022**: Machine learning competition on colour blindness detection
+- **Top 10** – Hackacity 2023: Smart city data challenge on CO₂ reduction – Porto Digital
+- **2nd Place** – Datattack 2023: 24h data science challenge for Civil Protection – IEEE Student Branch Porto
+- **3rd Place** – EESTEC Challenge Porto 2022: Machine learning competition on colour blindness detection
 
 ---
 
 ## Education
 
-* **M.Sc. in Electrical and Computer Engineering** - FEUP (2021 – 2023)
-  * *Specialization*: Industrial Automation, Embedded Systems, and Robotics.
-* **B.Sc. in Electrical and Computer Engineering** - FEUP (2018 – 2021)
-* **Erasmus+ Exchange Semester** - Universidad de Sevilla (2022 – 2023)
+- **M.Sc. in Electrical and Computer Engineering** – FEUP (2021–2023)  
+  - Specialization: Industrial Automation, Embedded Systems, and Robotics
+- **B.Sc. in Electrical and Computer Engineering** – FEUP (2018–2021)
+- **Erasmus+ Exchange Semester** – Universidad de Sevilla (2022–2023)
