@@ -21,9 +21,13 @@ nav_order: 14
 
 *January 2024 – Present*
 
+Crowd Data Collector is BMW's in-vehicle application platform, an "app runtime for the car" that lets teams deploy small, sandboxed workloads over-the-air onto vehicle ECUs, delivering connected-vehicle features and data products at software speed instead of firmware-release cycles. Over 2+ years I've worked both sides of the platform: contributing to the runtime itself and designing the data-collection jobs that run on it.
+
 #### Edge Computing & WebAssembly Platform
 
 *September 2025 – Present*
+
+Contributed to the hardware-agnostic C++14 / POSIX framework that orchestrates sandboxed WebAssembly workloads across multiple ECU architectures, **deployed on every BMW vehicle produced since 2025**, the [Neue Klasse](https://www.bmwgroup.com/en/company/neue-klasse.html).
 
 Developed BMW's in-vehicle data collection platform: a hardware-agnostic C++14 Posix-based framework that orchestrates sandboxed WebAssembly workloads across multiple ECU architectures, **deployed on every BMW vehicle produced since September 2025**. Worked across the platform core runtime, the WebAssembly execution engine, and a vehicle-specific platform variant.
 
