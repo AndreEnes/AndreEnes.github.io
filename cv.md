@@ -21,7 +21,7 @@ nav_order: 14
 
 *January 2024 – Present*
 
-Crowd Data Collector is BMW's in-vehicle application platform, an "app runtime for the car" that lets teams deploy small, sandboxed workloads over-the-air onto vehicle ECUs, delivering connected-vehicle features and data products at software speed instead of firmware-release cycles. Over 2+ years I've worked both sides of the platform: contributing to the runtime itself and designing the data-collection jobs that run on it.
+[Crowd Data Collector](https://www.bmwgroup.com/en/innovation/connected-car.html) is BMW's project for in-vehicle data collection. The most unique component is an "app runtime for the car" that lets teams deploy small, sandboxed workloads over-the-air onto vehicle ECUs, delivering connected-vehicle features and data products at software speed instead of firmware-release cycles. Over 2+ years I've worked both sides of the platform: contributing to the runtime itself and designing the data-collection jobs that run on it.
 
 #### Edge Computing & WebAssembly Platform
 
@@ -29,31 +29,31 @@ Crowd Data Collector is BMW's in-vehicle application platform, an "app runtime f
 
 Contributed to the hardware-agnostic C++14 / POSIX framework that orchestrates sandboxed WebAssembly workloads across multiple ECU architectures, **deployed on every BMW vehicle produced since 2025**, the [Neue Klasse](https://www.bmwgroup.com/en/company/neue-klasse.html).
 
-Developed BMW's in-vehicle data collection platform: a hardware-agnostic C++14 Posix-based framework that orchestrates sandboxed WebAssembly workloads across multiple ECU architectures, **deployed on every BMW vehicle produced since September 2025**. Worked across the platform core runtime, the WebAssembly execution engine, and a vehicle-specific platform variant.
+- **Sandboxed Execution:** Built permission-gated system services in the JIT WebAssembly runtime, so a single compiled job runs sandboxed across every supported ECU.
 
-- **Platform Core:** Contributed to the cross-ECU foundation providing full job lifecycle management — receive, install, validate, execute, update, and uninstall — including job API interfaces, manifest handling, persistent data management, and diagnostics integration.
-- **WebAssembly Runtime:** Developed permission-gated system services within the JIT-compiled WebAssembly runtime, enabling sandboxed near-native execution of data-collection jobs with cross-ECU portability from a single compiled artifact.
-- **Vehicle Platform Variant:** Contributed to a platform variant deployed on next-generation vehicle ECUs, addressing platform identity separation across hardware lines, platform-specific message/data layout handling, and observability lifecycle via in-vehicle metrics and monitoring infrastructure.
-- **Production Hardening:** Drove production hardening using ASAN/TSAN, Valgrind, and Coverity static analysis; worked with rate limiting, RAM monitoring, and metrics subsystems to ensure in-vehicle application stability.
-- **AUTOSAR Platform Metrics:** Implemented monitoring and metrics infrastructure for a classic AUTOSAR ECU platform, extracting data via hardware debuggers and transmitting over UDP; addressed low-level multi-core communication challenges; contributed to custom testing infrastructure.
-- **Integration & Testing:** Maintained CI pipelines with dual CMake/Bazel builds and automated sanitizer/analysis checks for safety-critical automotive software.
+- **Job Lifecycle:** Contributed to the cross-ECU job lifecycle and its API, from install and validation through update and uninstall.
+
+- **Production Hardening:** Hardened the runtime with ASAN/TSAN, Valgrind, and Coverity, plus rate-limiting and RAM monitoring to keep jobs stable on constrained hardware.
+
+- **AUTOSAR Metrics:** Added monitoring and metrics to a classic AUTOSAR ECU, extracting data over UDP via hardware debuggers.
 
 #### In-Vehicle Data Collection Jobs & SDK Ecosystem
 
 *March 2024 – September 2025*
 
-Developed in-vehicle data-collection jobs deployed across BMW's electric fleet, along with SDK tooling to accelerate job authoring — versioned per vehicle program and release.
+Delivered vehicle-side data products across BMW's electric fleet and SDK tooling that accelerated job authoring across vehicle programs and releases.
 
-- **Job Development:** Designed and implemented vehicle-side data products encompassing trigger/activation logic, signal collection and processing pipelines, and backend delivery contracts with event routing to backend receivers.
-- **Code Generation & SDK Automation:** Developed TypeScript-based code generation tools that fetch manifest and API specifications to automatically generate automotive protocol handling code (including CAN message decoding). Integrated generated outputs into build pipelines with linting, unit, and integration testing to ensure quality and consistency.
-- **Developer Experience:** Improved developer productivity by automating repetitive packet decoding tasks, reducing manual implementation effort and mismatch risks across systems. Continuously evolved generation templates and configuration to maintain alignment with evolving platform APIs and use-case requirements.
-- **Safety-Critical Systems & DevOps:** Developed embedded scripts for telemetry collection in resource-constrained automotive systems. Contributed to CI/CD infrastructure, quality gates, and release workflows to support platform stability.
+- **Data Products:** Designed and shipped in-vehicle data-collection jobs end to end, from trigger and activation logic to signal processing and backend delivery.
+
+- **SDK & Code Generation:** Co-designed a TypeScript SDK that turns CAN signal definitions into ready-to-use, typed code. Jobs read signals through a simple API instead of decoding CAN by hand.
+
+- **Developer Experience:** Cut repetitive decoding work and kept generated code in step with evolving platform APIs.
 
 #### C++ Academy
 
 *January 2024 – March 2024*
 
-- Three-month intensive C++ programme (OOP, concurrency, memory management, CI/CD with Docker and GitHub Actions).
+- Three-month **intensive C++ programme** (OOP, concurrency, memory management, CI/CD with Docker and GitHub Actions).
 
 ---
 
