@@ -8,34 +8,23 @@ nav_order: 11
 
 ## IoT Dashcam Crash Detection System
 
-In 2019, over 141,000 traffic victims were reported in Spain. Identifying the cause of an accident was often a complex task, especially without reliable evidence. DASHCAM was developed to address this issue by combining IoT technology with real-time data capture, offering automatic visual documentation of accidents.
+Spain recorded more than 141,000 traffic casualties in 2019. Identifying the cause of an accident is difficult without reliable evidence, so we built a dashcam that detects the impact on its own and sends the footage out automatically.
 
-##### Project Goal
-
-The system was designed to:
-
-- Detects vehicle crashes using motion sensors
-- Captures video and /images at the moment of impact
-- Sends visual evidence to subscribed users instantly via Telegram
-
-##### Hardware Components
+### Hardware
 
 - Raspberry Pi 4 Model B (4GB RAM)
-- Sense HAT with accelerometer and LED matrix
-- Camera Module V2 for capturing video and photos
+- Sense HAT, which provided the accelerometer and the LED matrix
+- Camera Module V2
 
-##### How It Worked
+### How It Worked
 
-- The Camera Thread streamed video into a circular buffer. Upon crash detection, it saved the last 10 seconds of footage and captured 5 still /images.
-- The Crash Detection Thread monitored accelerometer data and looked for sudden changes in motion. If a threshold was exceeded, it triggered crash routines.
-- The Communication Thread operated a Telegram bot that handled user registration and distributed crash alerts and media.
+The system ran three threads in parallel.
 
-##### Crash Notification
+The camera thread continuously wrote video into a circular buffer. When a crash was detected, it saved the last 10 seconds from that buffer and captured 5 still images.
 
-When a crash was detected, the system:
+The crash detection thread monitored the accelerometer for sudden changes in motion. If the reading crossed a threshold, it triggered the crash routine.
 
-- Sent a text alert, video, and photos to all registered Telegram users
-- Displayed a visual crash warning on the LED matrix
+The communication thread ran a Telegram bot. It handled user registration and then sent the alert, the video and the images to every subscribed user. The LED matrix displayed a warning at the same time.
 
 ![tinonininin](/images/projects/dashcam/tinoninoini.jpeg)
 
@@ -46,7 +35,8 @@ When a crash was detected, the system:
 - Raspberry Pi
 - Time-Series data
 - Crash detection
-- Telegram bot thjindfs
+- Telegram bot API
+- Multithreading
 
 ### Highlights
 

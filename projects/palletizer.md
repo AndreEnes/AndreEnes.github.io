@@ -1,22 +1,20 @@
 ---
 layout: default
-title: Colour-Sorting Palletizer Robotic Arm
+title: Colour-Sorting Palletiser Robotic Arm
 nav_order: 12
 ---
 
 [Back](../)
 
-## Colour-Sorting Palletizer Robotic Arm
+## Colour-Sorting Palletiser Robotic Arm
 
-This project involved building and programming a robotic arm in a "Palletizer" configuration capable of sorting three objects based on their color. The system used a TCS3200 color sensor to identify each object's color, and a set of SG90 servo motors to control the robotic arm's movements. Once identified, the object was placed in the corresponding position for its color.
+A robotic arm in a palletiser configuration that sorts objects by colour. A TCS3200 sensor reads the colour of each piece and the arm drops it in the position assigned to that colour, driven by SG90 servos.
 
-The arm's components and motion paths—including sensor, object pickup, and drop-off positions—were configurable via buttons and a 16x2 LCD, which also displayed real-time status updates. Configurations were stored in the EEPROM, enabling persistent memory between sessions.
+The interesting constraint was the Atmega328p. It had two PWM outputs available and the arm needed four servos, so I used transistors to switch which pair of servos those outputs were driving. Each servo had its own state machine, plus a calibration mode for fine positioning.
 
-To control four servo motors using limited PWM outputs, a transistor-multiplexing approach was implemented, optimizing pin usage on the Atmega328p microcontroller. Each servo had an associated state machine for movement control, and calibration modes were built in to allow fine-tuned positioning.
+Colour detection worked from the sensor's output frequency, measured with the external timers and converted into RGB values to classify the piece. The whole flow, from detecting an object to placing it, ran as a finite state machine.
 
-The color detection logic analyzed pulse frequency from the sensor using external timers to determine RGB values and classify the object. The system’s flow was structured as a finite state machine, allowing a seamless process from object detection to classification and placement.
-
-Overall, the project demonstrated low-level embedded systems programming, motor control, sensor integration, and state-machine-based automation.
+The positions for the sensor, the pickup point and each drop-off were configurable through buttons and a 16x2 LCD, which also showed the current status. Those settings were stored in EEPROM, so they survived a power cycle.
 
 Here is a picture of the prototype (without any of the coloured pieces):
 
@@ -30,7 +28,7 @@ And here is the hardware schematic:
 
 - AVR
 - Servo motor control
-- Color sensor
+- Colour sensor
 - Embedded Programming
 - Electronics
 
@@ -38,13 +36,13 @@ And here is the hardware schematic:
 
 - Inspired interest in embedded systems
 - Used different types of components
-- Hardware restrictions lead to creative solutions
+- Hardware restrictions led to creative solutions
   - The microcontroller only has 2 ports capable of running the servo motors, so separate transistors were used to make a "pin selector" to change how the pins were connected to each servo.
 
 ### Lowlights
 
 - It was during the covid lockdown, so access to hardware tools was quite limited which made it harder to debug.
-- The component precision was low, so the whole project was a bit finnicky.
+- The component precision was low, so the whole project was a bit finicky.
 - Single buttons make for annoying _"User Interfaces"_.
 
 ### Lessons Learned

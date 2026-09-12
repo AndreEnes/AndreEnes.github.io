@@ -8,7 +8,7 @@ nav_order: 3
 
 ## ⚠️ WARNING ⚠️
 
-This section is not strictly "professional". Let a bit loose. Check out the [Projects](../) tab for that.
+This section is not strictly "professional". Let loose a bit. Check out the [Projects](../) tab for that.
 
 ## Behind the Scenes
 
@@ -32,7 +32,7 @@ Photography is cool. Flash photography is also cool. Here are some pictures:
 
 ## Shower Thoughts
 
-- An Applewatch does the same thing as my beautiful sensor system, expect it predicts faults in humans.
+- An Apple Watch does the same thing as my beautiful sensor system, except it predicts faults in humans.
 - Can people that speak tonal languages be sarcastic? I refuse to google this.
 - Guarda-redes de andebol tem o equipamento mais ressolha à face da terra.
 <!-- - STMicroelectronics' website feels like this [video](https://www.youtube.com/watch?v=iy63PEgmm8w). -->
@@ -45,11 +45,11 @@ Photography is cool. Flash photography is also cool. Here are some pictures:
 ## Great Teachings of Life
 
 - Se rima, é verdade. (If it rhymes, it's true)
-- Don't start with trying to make things generic. By the time you finish it, the deadline has passed. It's better to make something with a specific goal in mind and later adapting it. If making things generic were reliable, consulting companies would cease to exist. Death and Taxes and Deloitte.
+- Don't start with trying to make things generic. By the time you finish it, the deadline has passed. It's better to make something with a specific goal in mind and adapt it later. If making things generic were reliable, consulting companies would cease to exist. Death and Taxes and Deloitte.
 - Working with unmotivated people is like trying to save someone who is drowning. They will pull you down. Saving one alone is nearly impossible without the right tools or help.
-- Never miss a change to go to the bathroom.
-- Don't look at MIT applications on Youtube, you will feel dumb.
-- Admiration and jealousy are not too far apart, look at the previous line. Here's some other sources of jealation:
+- Never miss a chance to go to the bathroom.
+- Don't look at MIT applications on YouTube, you will feel dumb.
+- Admiration and jealousy are not too far apart, look at the previous line. Here are some other sources of jealation:
   - [Ashrita Furman](https://en.wikipedia.org/wiki/Ashrita_Furman)
   - [HAN Lab](https://hanlab.mit.edu/)
   - [EdgeImpulse](https://edgeimpulse.com/)
@@ -62,7 +62,7 @@ Photography is cool. Flash photography is also cool. Here are some pictures:
 
 ## Project Ideas that are available for stealing
 
-- Analog synthesizer using an aux cable as input
+- Analogue synthesiser using an aux cable as input
   - Cool to apply effects to live audio
   - Toaster cenas
 - TinyML: detect seagulls with cheap camera...
@@ -73,4 +73,4 @@ Photography is cool. Flash photography is also cool. Here are some pictures:
 
 - The Wavelet Transform.
 - How are Kalman Filters used in an economic scenario? Wikipedia always says this.
-- How to draw a series of not intersecting shapes inside a fixed area.
+- How to draw a series of non-intersecting shapes inside a fixed area.

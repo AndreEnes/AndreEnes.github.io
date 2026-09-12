@@ -8,10 +8,11 @@ nav_order: 14
 
 ## Core Technical Skills
 
-- **Programming Languages:** C/C++, Python, TypeScript, AssemblyScript, Bash, IEC 61131-3
-- **Tools & Platforms:** Git, Docker, CI/CD (GitHub Actions, Zuul), CMake, Bazel, ROS, WebAssembly
+- **Domains:** Safety-critical automotive, embedded and edge systems, applied machine learning
+- **Programming Languages:** C/C++, Python, TypeScript, AssemblyScript, Bash
+- **Tools & Platforms:** Git, Docker, CI/CD (GitHub Actions, Zuul), CMake, Bazel, ROS, WebAssembly, JTAG Debuggers
 - **Quality & Safety:** ASAN/TSAN, Valgrind, Static Analysis (Coverity, SonarQube)
-- **Languages:** Portuguese (Native), English (C2), Spanish (B1), German (A2/B1)
+- **Languages:** Portuguese (Native), English (C2), Spanish (B1), German (A2, studying for B1)
 
 ---
 
@@ -21,81 +22,83 @@ nav_order: 14
 
 *January 2024 – Present*
 
-[Crowd Data Collector](https://www.bmwgroup.com/en/innovation/connected-car.html) is BMW's project for in-vehicle data collection. The most unique component is an "app runtime for the car" that lets teams deploy small, sandboxed workloads over-the-air onto vehicle ECUs, delivering connected-vehicle features and data products at software speed instead of firmware-release cycles. Over 2+ years I've worked both sides of the platform: contributing to the runtime itself and designing the data-collection jobs that run on it.
+[Crowd Data Collector](https://www.bmwgroup.com/en/innovation/connected-car/data-ecosystem.html) is BMW's project for in-vehicle data collection. Its most unusual component is an "app runtime for the car": teams deploy small sandboxed workloads over the air onto vehicle ECUs. New features do not have to wait for a firmware release. For almost three years I have worked on both sides of it, the runtime itself and the jobs that run on top of it, together with teams in Germany and China.
 
 #### Edge Computing & WebAssembly Platform
 
 *September 2025 – Present*
 
-Contributed to the hardware-agnostic C++14 / POSIX framework that orchestrates sandboxed WebAssembly workloads across multiple ECU architectures, **deployed on every BMW vehicle produced since 2025**, the [Neue Klasse](https://www.bmwgroup.com/en/company/neue-klasse.html).
+A hardware-agnostic C++14 and POSIX [framework](/projects/runtime/) that orchestrates sandboxed WebAssembly workloads across several ECU architectures. It is **deployed on every BMW [Neue Klasse](https://www.bmwgroup.com/en/company/neue-klasse.html) vehicle**.
 
-- **Sandboxed Execution:** Built permission-gated system services in the JIT WebAssembly runtime, so a single compiled job runs sandboxed across every supported ECU.
-
-- **Job Lifecycle:** Contributed to the cross-ECU job lifecycle and its API, from install and validation through update and uninstall.
-
-- **Production Hardening:** Hardened the runtime with ASAN/TSAN, Valgrind, and Coverity, plus rate-limiting and RAM monitoring to keep jobs stable on constrained hardware.
-
-- **AUTOSAR Metrics:** Added monitoring and metrics to a classic AUTOSAR ECU, extracting data over UDP via hardware debuggers.
+- **Sandboxed Execution:** Built permission-gated system services in the WebAssembly runtime. A job is compiled once and then runs sandboxed on every supported ECU.
+- **Job Lifecycle:** Contributed to the cross-ECU job lifecycle and its API, covering install, validation, update and uninstall.
+- **Production Hardening:** Hardened the runtime with ASAN, TSAN, Valgrind, Coverity and SonarQube, run through the Zuul CI pipelines. Added rate-limiting and RAM monitoring to keep jobs inside the memory budget of constrained hardware.
+- **Observability:** Built a [per-job metrics service](/projects/metrics/) for the platform's runtime on BMW's Heart of Joy, a Classic AUTOSAR ECU, and validated the whole path on the target with hardware-in-the-loop tests and a JTAG debugger.
 
 #### In-Vehicle Data Collection Jobs & SDK Ecosystem
 
 *March 2024 – September 2025*
 
-Delivered vehicle-side data products across BMW's electric fleet and SDK tooling that accelerated job authoring across vehicle programs and releases.
-
-- **Data Products:** Designed and shipped in-vehicle data-collection jobs end to end, from trigger and activation logic to signal processing and backend delivery.
-
-- **SDK & Code Generation:** Co-designed a TypeScript SDK that turns CAN signal definitions into ready-to-use, typed code. Jobs read signals through a simple API instead of decoding CAN by hand.
-
-- **Developer Experience:** Cut repetitive decoding work and kept generated code in step with evolving platform APIs.
+- **Data Products:** Designed and shipped over a dozen [in-vehicle data-collection jobs](/projects/jobs/) across BMW's electric fleet, several of them end to end: trigger and activation logic, signal processing, and delivery to the backend.
+- **SDK & Code Generation:** Co-designed and built most of a [TypeScript SDK](/projects/sdk/) that turns CAN and FlexRay signal definitions into typed AssemblyScript code. Jobs receive named, typed signals instead of decoding raw payloads by hand.
+- **API Evolution:** Kept the generated code in step with the platform APIs as they changed across vehicle programmes and releases.
 
 #### C++ Academy
 
 *January 2024 – March 2024*
 
-- Three-month **intensive C++ programme** (OOP, concurrency, memory management, CI/CD with Docker and GitHub Actions).
+Three-month intensive C++ programme at the start of the role, covering OOP, concurrency, memory management, and CI/CD with Docker and GitHub Actions.
 
 ---
 
-## Projects
+## Academic Experience
 
 ### Research Scholarship – GreenAuto Programme – DIGI2 Laboratory, FEUP
 
 *December 2022 – October 2023*
 
-Designed and developed a wireless IoT sensor system for predictive maintenance on Automated Guided Vehicles and nearby machinery in an industrial setting as part of the GreenAuto project for automotive industry sustainability.
+My M.Sc. dissertation, done on a research scholarship within the GreenAuto project for automotive industry sustainability. A wireless IoT sensor system for predictive maintenance on Automated Guided Vehicles and the machinery around them.
 
-- **Embedded Development:** Built firmware on Teensy and ESP-12E microcontrollers integrating accelerometers, digital/analog/ultrasonic microphones, and IR temperature sensors. Implemented signal processing pipelines (DFT, STFT, wavelet transforms), SD card logging, and real-time WiFi data streaming.
-- **Data Pipeline:** Collected vibration, acoustic, and temperature data from industrial AGVs and machines; designed preprocessing with time-domain features to minimize wireless transmission overhead and ingestion into database systems.
-- **ML Anomaly Detection:** Trained and deployed supervised models (XGBoost, Decision Trees) achieving accurate anomaly detection for fault identification. Evaluated unsupervised approaches (Isolation Forest, Autoencoders) and conducted comparative cost-performance analysis of sensor options.
-- **Outcome:** Completed full dissertation and presentation materials; demonstrated extension of Industry 4.0 capabilities to legacy equipment, reducing downtime and optimizing maintenance scheduling.
+- **Embedded Firmware:** Built Teensy and ESP-12E firmware collecting vibration, sound and temperature, with DFT, STFT and wavelet processing on the device, SD card logging and real-time WiFi streaming.
+- **Anomaly Detection:** Benchmarked five supervised and three unsupervised models. XGBoost was the best, reaching an F1 of 0.99 on the most imbalanced dataset (9% anomalies); the unsupervised models could not separate the faults.
+- **Data Pipeline:** Chose time-domain features for preprocessing, mainly to keep the wireless traffic down.
+- **Outcome:** Showed that predictive maintenance can be retrofitted to legacy AGV equipment. Full dissertation and presentation available on the [project page](/projects/sensorSystem/).
 
 ### Summer Internship – ML Toolkit – DIGI2 Laboratory, FEUP
 
 *July 2022 – September 2022*
 
-Built a Python toolkit for solving generic regression problems by finding optimal input parameters for desired target outputs. Designed with a modularized ML architecture to support integration with multiple frontends beyond the initial Streamlit UI.
+A Python toolkit that finds the input parameters producing a desired target output for a regression problem.
 
-- **Model Training & Optimization:** Implemented XGBoost regressors with automated hyperparameter tuning via Hyperopt and simulated annealing (SciPy's dual_annealing) for finding optimal parameter configurations.
-- **User Interface & Interpretability:** Developed an interactive Streamlit interface for model training, predictions, and parameter optimization. Integrated SHAP-based feature importance analysis with beeswarm plots for intuitive model explainability.
-- **System Features:** Supported both continuous and discrete variables, incremental model retraining for reduced computational overhead, JSON-based project configuration templates for reproducible workflows.
+- XGBoost regressors with hyperparameter tuning through Hyperopt, and simulated annealing (SciPy's dual_annealing) to search the parameter space.
+- SHAP feature-importance analysis, so the model could be inspected rather than taken on trust.
+- A Streamlit interface, with the machine learning kept separate from the UI so that it could be driven from another frontend.
+
+---
+
+## Volunteering
+
+### President of the General Assembly – BEST Porto
+
+*2022 – 2023*
+
+Chaired the general assembly of [BEST Porto](https://bestporto.org/), the local branch of the [Board of European Students of Technology](https://best.eu.org/index.jsp).
 
 ### EBEC Porto 2022 – Challenge Lead
 
 *October 2021 – May 2022*
 
-Designed and executed the Team Design challenge for EBEC Porto 2022 (200+ participants, 24-hour format) in partnership with Saltpay (portable ATM software).
+Designed and ran the Team Design challenge for EBEC Porto 2022, the largest engineering competition in Portugal, in partnership with Saltpay.
 
-- **Challenge:** Developed an ATM prototype challenge where participants build devices for withdrawal selection, card insertion, and token dispensing.
-- **Event Execution:** Coordinated 200+ participants at FEUP, provided technical support for electronics integration, circuit troubleshooting, and hardware issues.
-- **Outcome:** Successfully delivered Portugal's largest engineering competition.
+- Wrote the challenge itself: teams built an ATM prototype handling withdrawal selection, card insertion and token dispensing.
+- Coordinated more than 200 participants over the 24-hour format at FEUP, and provided the on-site electronics support, from circuit troubleshooting to failing hardware.
 
 ---
 
 ## Achievements
 
-- **Top 10 – Hackacity 2023:** Smart city data challenge on CO₂ reduction – Porto Digital
-- **2nd Place – Datattack 2023:** 24h data science challenge for Civil Protection – IEEE Student Branch Porto
+- **Top 10 – Hackacity 2023:** Smart city data challenge on CO₂ reduction (Porto Digital)
+- **2nd Place – Datattack 2023:** 24h data science challenge for Civil Protection (IEEE Student Branch Porto)
 - **3rd Place – EESTEC Challenge Porto 2022:** Machine learning competition on colour blindness detection
 
 ---
@@ -103,6 +106,7 @@ Designed and executed the Team Design challenge for EBEC Porto 2022 (200+ partic
 ## Education
 
 - **M.Sc. in Electrical and Computer Engineering** – FEUP (2021–2023)
-  - Specialization: Industrial Automation, Embedded Systems, and Robotics
+  - Specialisation: Industrial Automation, Embedded Systems, and Robotics, including IEC 61131-3 PLC programming
+  - Dissertation: [Sensor System for Predictive Maintenance in Industrial Environments](/documents/SensorSystemForPredictiveMaintenanceInIndustrialEnvironments.pdf)
 - **B.Sc. in Electrical and Computer Engineering** – FEUP (2018–2021)
-- **Erasmus+ Exchange Semester** – Universidad de Sevilla (2022–2023)
+- **Erasmus+ Exchange Semester** – Universidad de Sevilla (2022–2023, during the M.Sc.)

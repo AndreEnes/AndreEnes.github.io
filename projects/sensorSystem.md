@@ -8,14 +8,11 @@ nav_order: 5
 
 ## Sensor System for Industrial Predictive Maintenance
 
-Sensor module design, embedded development, and ML for predictive maintenance.  
-It was developed in the scope of the [GreenAuto](https://www.agendagreenauto.pt/projeto/) Project.
+My master's dissertation, developed within the [GreenAuto](https://www.agendagreenauto.pt/projeto/) project. I designed a wireless sensor system that monitors the condition of industrial machines through vibration, sound and temperature, so that predictive maintenance can be applied to older equipment that was never built with sensors in mind.
 
-This project explored the implementation of Predictive Maintenance in manufacturing environments that relied on legacy machinery lacking modern sensor capabilities. A wireless sensor system was developed using IoT hardware and Machine Learning algorithms to monitor equipment health through vibration, sound, and temperature data.
+The targets were Automated Guided Vehicles and the machines around them, which meant the modules had to be cheap and small enough to be added to equipment already in service. I built the firmware on Teensy and ESP-12E microcontrollers, with accelerometers, analogue, digital and ultrasonic microphones, and an infrared temperature sensor. To keep the wireless traffic down, the modules computed time-domain features on the device instead of streaming the raw signals.
 
-The system was designed specifically for Automated Guided Vehicles (AGVs) and nearby machines, with a focus on cost-effectiveness and space constraints. Data preprocessing techniques based on time-domain features were employed to minimize wireless data transmission. Supervised learning models delivered highly accurate anomaly detection results, while unsupervised models performed poorly. A comparative analysis of sensors with varying costs was also conducted to evaluate their performance.
-
-This work demonstrated how emerging technologies could extend Industry 4.0 capabilities to older equipment, reducing downtime and optimizing maintenance schedules.
+For the detection itself, the supervised models worked and the unsupervised ones did not. XGBoost was the best, reaching an F1 of 0.99 on the most imbalanced dataset (9% anomalies, temperature excluded). One-Class SVM, Isolation Forest and Local Outlier Factor were all clearly worse, with precision as low as 0.06. I also compared sensors at different price points, to see how much detection performance the cheaper components actually cost.
 
 You can read the full dissertation here: [Dissertation](/documents/SensorSystemForPredictiveMaintenanceInIndustrialEnvironments.pdf). For a more condensed version, check out the [slides](/documents/Dissertation_Presentatio.pdf) for the presentation.
 
@@ -25,7 +22,7 @@ You can read the full dissertation here: [Dissertation](/documents/SensorSystemF
 
 #### Embedded Systems
 
-- Accelerometers, microphones (analog, digital, ultrasonic), IR temperature sensors
+- Accelerometers, microphones (analogue, digital, ultrasonic), IR temperature sensors
 - Microcontrollers (Teensy, ESP-12E), ADC, EEPROM, SD card
 - WiFi communication, power management, level shifting
 - Custom hardware testbeds
@@ -39,8 +36,8 @@ You can read the full dissertation here: [Dissertation](/documents/SensorSystemF
 #### Machine Learning & Data Analysis
 
 - Time-series preprocessing, outlier removal
-- Supervised models: XGBoost, Decision Trees
-- Unsupervised models: Isolation Forest, Autoencoders
+- Supervised models: XGBoost, Random Forest, AdaBoost, k-NN, SVM
+- Unsupervised models: Isolation Forest, One-Class SVM, Local Outlier Factor
 - Anomaly detection, dataset creation, evaluation metrics
 
 #### Software & Infrastructure

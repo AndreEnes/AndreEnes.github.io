@@ -17,12 +17,12 @@ For some of the competitions I took part in, I no longer have much evidence or d
 - [PwC Challenge](#pwc-challenge)
 - [SciTech 2019](#scitech-2019)
 - [YML Hackathon - IKEA](#yml-hackathon---ikea)
-- [EBEC Porto 21 as an Organizer](#ebec-porto-21-as-an-organizer)
+- [EBEC Porto 21 as an Organiser](#ebec-porto-21-as-an-organiser)
 - [BEST IT Competition 2021](#best-it-competition-2021)
-- [EBEC Porto 22 as an Organizer](#ebec-porto-22-as-an-organizer)
-- [EBEC Iberia as an Organizer](#ebec-iberia-as-an-organizer)
-- [EESTECH Challenge Porto 2022](#eestech-challenge-porto-2022)
-- [EBEC Porto 23 as an Organizer](#ebec-porto-23-as-an-organizer)
+- [EBEC Porto 22 as an Organiser](#ebec-porto-22-as-an-organiser)
+- [EBEC Iberia as an Organiser](#ebec-iberia-as-an-organiser)
+- [EESTEC Challenge Porto 2022](#eestec-challenge-porto-2022)
+- [EBEC Porto 23 as an Organiser](#ebec-porto-23-as-an-organiser)
 - [Datattack 2023](#datattack-2023)
 - [6th Cassini Hackathon](#6th-cassini-hackathon)
 - [Hackacity 2023 - Smart City Data Challenge](#hackacity-2023---smart-city-data-challenge)
@@ -30,7 +30,7 @@ For some of the competitions I took part in, I no longer have much evidence or d
 
 ## What is this EBEC thing?
 
-EBEC stands for (used to stand for) European BEST Engineering Competition. Which is organised by [BEST](https://best.eu.org/index.jsp), which, in turn, stands for Board of European Students of Technology. It is a student organisation spread out through Europe with hubs in lots of different countries, from Estonia to Portugal.
+EBEC stands for (or used to stand for) European BEST Engineering Competition. It is organised by [BEST](https://best.eu.org/index.jsp), which in turn stands for Board of European Students of Technology. It is a student organisation spread out through Europe with hubs in lots of different countries, from Estonia to Portugal.
 
 EBEC follows a pyramid structure: each local hub hosts its own challenge, with winning teams advancing to a national round and, ultimately, the European final. The competition maintains a standard format across Europe:
 
@@ -41,7 +41,7 @@ EBEC follows a pyramid structure: each local hub hosts its own challenge, with w
 
 While the format evolves each year based on BEST’s financial resources and other factors, EBEC Porto consistently stands out. It remains the largest engineering competition in Portugal, attracting more than 250 participants annually.
 
-I first participated in 2019, in Team Design, and I had such a great time that I joined BEST and helped organise more 4 editions of the competition, which is why EBEC shows up so often in this section.
+I first participated in 2019, in Team Design, and I had such a great time that I joined BEST and helped organise four more editions of the competition, which is why EBEC shows up so often in this section.
 
 ## EBEC Porto 2019
 
@@ -57,7 +57,7 @@ Judging combined objective criteria (such as the number of manual interventions 
 
 Our team built a boat-like structure with a central mast for the flag. Each deck housed a different mechanism, creating a chain reaction to lift the flag. It was a blast to design and assemble, even though we didn’t win.
 
-The biggest lesson I took away: I was surprised by how much could be accomplished in such a short time (just 24 hours). The time pressure forced intense focus and creative problem-solving—something I’ve come to love about hackathons ever since.
+The biggest lesson I took away: I was surprised by how much could be accomplished in such a short time (just 24 hours). The time pressure forced intense focus and creative problem-solving, something I’ve come to love about hackathons ever since.
 
 ## PwC Challenge
 
@@ -86,7 +86,7 @@ Our team examined IKEA’s online business, comparing the order process, shippin
 
 Although we did not win, it was an enjoyable opportunity to tackle a business-focused challenge.
 
-## EBEC Porto 21 as an Organizer
+## EBEC Porto 21 as an Organiser
 
 2021 was still during Covid. EBEC 2020 had been cancelled just three days before it was supposed to start, which left everyone pretty demotivated and led to a big drop in participation. I had joined BEST a few months earlier, after really enjoying my experience as a participant in 2019, and decided to apply for "Topic Responsible" (one of two). That meant I was in charge of everything related to the technical challenges:
 
@@ -106,11 +106,11 @@ Our team created a prototype designed to help blind people navigate without the 
 
 Although we did not win the main competition, we did secure victory in the mini meme contest. The event took place during the Covid pandemic, and I suspect I may have contracted the virus by the end. Not ideal...
 
-## EBEC Porto 22 as an Organizer
+## EBEC Porto 22 as an Organiser
 
 Due to some administrative issues at my university, I was supposed to go on Erasmus in 2021 but had to cancel it. By then, there were no longer any interesting roles available at BEST, so in October 2021 I decided to re-apply as a "Topic Responsible." This time, the challenge was most likely going to involve building a physical device, although we were not completely certain at first.
 
-Fortunately, we were allowed to host the competition at FEUP, but strict health measures were still in place and everyone had to wear face masks. Masks were only lifted a few weeks after the competition ended. It was a strange period because most of the people who had previously organized a live edition of the competition had already left the organization, taking much of the accumulated knowledge with them. As a result, we had to figure out most things ourselves, which was especially challenging given that the competition involved more than 200 participants.
+Fortunately, we were allowed to host the competition at FEUP, but strict health measures were still in place and everyone had to wear face masks. Masks were only lifted a few weeks after the competition ended. It was a strange period because most of the people who had previously organised a live edition of the competition had already left the organisation, taking much of the accumulated knowledge with them. As a result, we had to figure out most things ourselves, which was especially challenging given that the competition involved more than 200 participants.
 
 The Public Relations department of BEST secured a partnership with a company called Switch, which wanted to sponsor the topic. Switch developed portable ATM software, so we proposed designing an ATM as the final challenge. In the middle of preparing the topic, we learned that Switch had been acquired by another company, Saltpay, which has since been acquired by yet another one, Teya. Fortunately, Saltpay kept the same challenge. The task for participants was to build a device where users could select an amount to withdraw and, after inserting a “credit card,” receive that amount in “Saltpay Bucks” and “Saltpay Coins.”
 
@@ -128,19 +128,19 @@ Here is me having fun:
 
 ![speed](/images/hackathons/ebec22_speed.png)
 
-## EBEC Iberia as an Organizer
+## EBEC Iberia as an Organiser
 
-This was the regional round before the European EBEC final and after the EBEC I had help organise, so the winning team from Porto also participated. I wasn’t just the electronics helper as I did a bit of everything: setting up rooms, cleaning, and even cooking for the teams. The whole event had a great team spirit, despite the many mishaps. Also got to do a group yoga session, which turned out to be a fun way to unwind from all the chaos.
+This was the regional round before the European EBEC final and after the EBEC I had helped organise, so the winning team from Porto also participated. I wasn’t just the electronics helper as I did a bit of everything: setting up rooms, cleaning, and even cooking for the teams. The whole event had a great team spirit, despite the many mishaps. Also got to do a group yoga session, which turned out to be a fun way to unwind from all the chaos.
 
-## EESTECH Challenge Porto 2022
+## EESTEC Challenge Porto 2022
 
-This was a machine learning competition focused on detecting colour blindness, organised by EESTECH—a student group dedicated to electronics and software. The challenge revolved around improving the accessibility of the main sponsor’s website for users with colour vision deficiencies.
+This was a machine learning competition focused on detecting colour blindness, organised by EESTEC, a student group dedicated to electronics and software. The challenge revolved around improving the accessibility of the main sponsor’s website for users with colour vision deficiencies.
 
 Our team created a prototype that dynamically adjusted the site’s colour palette. Users could select their type of colour blindness, and our tool would automatically choose complementary colours and tweak their values to maximise visibility and contrast.
 
 We finished in third place and received an internship offer from the sponsor. I opted instead to intern at Digi2Laboratory at FEUP. Interestingly, the team I usually compete with took first place and progressed to the European final in Milan. They didn't win the final, which made me a bit less jealous.
 
-## EBEC Porto 23 as an Organizer
+## EBEC Porto 23 as an Organiser
 
 In another edition of EBEC, I joined as an Electronics Assistant. Before the competition, I gave a short lecture introducing participants to the basics of Arduino, along with examples of how they could integrate it into their prototypes. The session was mandatory and held a few days before the event. With over 200 students obliged to attend, the atmosphere was… let’s say lively. Lots of noise, but I did my best.
 
@@ -154,24 +154,9 @@ Our team developed a tool to predict where forest fires were most likely to spre
 
 ## 6th Cassini Hackathon
 
-- **Goal**: Develop impactful solutions for international development and humanitarian aid using EU space technologies (Copernicus, Galileo, EGNOS, and future IRIS2 services).
-- **Format**: 48-hour hackathon held simultaneously in 11 European cities plus Ukraine, culminating in a working prototype and presentation.
+A 48-hour hackathon held at the same time in 11 European cities plus Ukraine, about using EU space technology for humanitarian aid and development.
 
-### Challenge: Sustainable Infrastructure Development
-
-Focus areas included spatial planning, renewable energy forecasting, transportation and mobility infrastructure, critical infrastructure monitoring, and disaster damage assessment.
-
-### Data Sources
-
-- **Copernicus**: Earth observation data for environmental, climate, and disaster monitoring.
-- **Galileo**: High-precision global navigation.
-- **EGNOS**: Enhanced GNSS accuracy.
-- **IRIS2**: Upcoming broadband and secure communications.
-- **GOVSATCOM & Space Situational Awareness**: Planned for future editions.
-
-### Our Project
-
-We built a web-based tool to provide real-time navigation for emergency vehicles (ambulances, fire engines) during disasters like wildfires or landslides. Standard navigation systems may not reflect blocked or unsafe roads, so our solution leveraged [OpenStreetMap](https://www.openstreetmap.org/about) and live data from [_Copernicus_](https://www.copernicus.eu/en) and [_Galileo_](https://defence-industry-space.ec.europa.eu/eu-space/galileo-satellite-navigation_en) to dynamically re-route vehicles from point A to B. Another team had a similar concept, which affected our scoring, but the experience was rewarding.
+We built a web tool that re-routes emergency vehicles, such as ambulances and fire engines, around roads blocked by wildfires or landslides. Normal navigation does not know which roads are unsafe, so we combined [OpenStreetMap](https://www.openstreetmap.org/about) with live data from [Copernicus](https://www.copernicus.eu/en) and [Galileo](https://defence-industry-space.ec.europa.eu/eu-space/galileo-satellite-navigation_en). Unfortunately, another team had a very similar idea, which did not help our score.
 
 ## Hackacity 2023 - Smart City Data Challenge
 
@@ -189,6 +174,6 @@ Altice, owner of MEO, a major telecommunications and TV provider in Portugal, ga
 
 Teams knew the challenge a week in advance and had 12 hours on the competition day to build a prototype and presentation.
 
-My team’s project, ZapZop — a mix of zapping and TikTok — showed short clips of shows matched to a user’s personality. Viewers could click a clip to watch the full program.
+My team’s project, ZapZop, a mix of zapping and TikTok, showed short clips of shows matched to a user’s personality. Viewers could click a clip to watch the full programme.
 
 We didn’t win. The winning project was basically the same idea, just better.

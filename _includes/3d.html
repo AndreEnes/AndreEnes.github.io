@@ -1,56 +1,131 @@
-<div id="canvas-container" style="width: 100%; height: 400px; background-color: #ffffff; margin: 20px 0; border-radius: 8px;"></div>
+<div id="canvas-container" style="width: 100%; height: 400px; background-color: #ffffff; margin: 20px 0 8px; border-radius: 8px;"></div>
+
+<p style="font-size: 0.6em; color: #666; margin: 0 0 20px;">
+  Arduino by Mauricio Martínez González [CC-BY] via Poly Pizza. Robot Arm by m m [CC-BY] via Poly Pizza.
+</p>
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/three@0.128.0/examples/js/loaders/GLTFLoader.js"></script>
 
 <script>
   const container = document.getElementById('canvas-container');
 
   const scene = new THREE.Scene();
   scene.background = new THREE.Color(0xffffff);
-  
-  const camera = new THREE.PerspectiveCamera(75, container.clientWidth / container.clientHeight, 0.1, 1000);
+
+  const camera = new THREE.PerspectiveCamera(45, container.clientWidth / container.clientHeight, 0.1, 100);
   const renderer = new THREE.WebGLRenderer({ antialias: true });
-  
-  renderer.setSize(container.clientWidth, container.clientHeight);
+  renderer.setPixelRatio(Math.min(window.devicePixelRatio, 2));
+  renderer.outputEncoding = THREE.sRGBEncoding;
   container.appendChild(renderer.domElement);
 
-  const geometry = new THREE.ConeGeometry(1.2, 3, 30);
-  
-  const material = new THREE.MeshStandardMaterial({
-    color: 0x00ff88,
-    roughness: 1,
-    metalness: 0.8
+  // Soft light from all around plus one key light. The grey ground colour of
+  // the hemisphere light keeps undersides visible when they turn to face us.
+  scene.add(new THREE.HemisphereLight(0xffffff, 0xb0b0b0, 0.9));
+  const sun = new THREE.DirectionalLight(0xffffff, 0.7);
+  sun.position.set(3, 5, 4);
+  scene.add(sun);
+
+  // Left to right. The files use very different units, so each model is
+  // scaled on load until the sphere around it has radius 1. That makes them
+  // read as the same size.
+  const MODELS = [
+    '/assets/models/RobotArm.glb',
+    '/assets/models/car.glb',
+    '/assets/models/arduino.glb'
+  ];
+  const SPACING = 2.3;   // centre to centre, so neighbouring spheres never touch
+
+  const loader = new THREE.GLTFLoader();
+
+  // Each model tumbles inside its own group, so the centring and scaling
+  // applied to the model itself are never disturbed by the rotation.
+  const tumblers = MODELS.map((url, i) => {
+    const tumbler = new THREE.Group();
+    tumbler.position.x = (i - (MODELS.length - 1) / 2) * SPACING;
+    tumbler.rotation.set(i * 0.9, i * 2.1, 0);   // a different starting pose each
+    scene.add(tumbler);
+
+    loader.load(url, (gltf) => {
+      const model = gltf.scene;
+      const center = new THREE.Box3().setFromObject(model).getCenter(new THREE.Vector3());
+
+      // Radius of the sphere, centred on the model, that contains every
+      // vertex. The model stays inside it in any orientation.
+      model.updateMatrixWorld(true);
+      const vertex = new THREE.Vector3();
+      let radius = 0;
+      model.traverse((object) => {
+        if (!object.isMesh) return;
+
+        // The scene has no environment map, so metalness would only darken a
+        // surface, and gloss gives hard highlights. Some exports carry both;
+        // flatten every material to the same matte look.
+        const materials = Array.isArray(object.material) ? object.material : [object.material];
+        materials.forEach((material) => { material.metalness = 0; material.roughness = 1; });
+
+        const positions = object.geometry.attributes.position;
+        for (let j = 0; j < positions.count; j++) {
+          vertex.fromBufferAttribute(positions, j).applyMatrix4(object.matrixWorld);
+          radius = Math.max(radius, vertex.distanceTo(center));
+        }
+      });
+
+      const scale = 1 / radius;
+      model.scale.setScalar(scale);
+      model.position.copy(center).multiplyScalar(-scale);
+      tumbler.add(model);
+    }, undefined, (error) => console.error(`Could not load ${url}.`, error));
+
+    return tumbler;
   });
-  
-  const customShape = new THREE.Mesh(geometry, material);
-  scene.add(customShape);
-  
-  const ambientLight = new THREE.AmbientLight(0xffffff, 0.5);
-  scene.add(ambientLight);
-  
-  const pointLight = new THREE.PointLight(0xffffff, 1);
-  pointLight.position.set(5, 5, 5);
-  scene.add(pointLight);
 
-  camera.position.z = 3;
+  // Every model sits inside a sphere of radius 1, so the row fits the camera
+  // whatever pose the models are in. Vertically one sphere has to fit;
+  // horizontally the whole row has to fit, measured at the depth of the
+  // spheres' nearest points. On a phone the width decides.
+  const HALF_WIDTH = SPACING * (MODELS.length - 1) / 2 + 1;
+  const MARGIN = 1.05;
 
-  function animate() {
-    requestAnimationFrame(animate);
-
-    customShape.rotation.x += 0.05;
-    customShape.rotation.y += 0.06;
-    customShape.rotation.z += 0.01;
-
-    renderer.render(scene, camera);
-  }
-
-  window.addEventListener('resize', () => {
+  function fitCamera() {
     const width = container.clientWidth;
     const height = container.clientHeight;
     renderer.setSize(width, height);
     camera.aspect = width / height;
-    camera.updateProjectionMatrix();
-  });
 
+    const halfV = THREE.MathUtils.degToRad(camera.fov) / 2;
+    const halfH = Math.atan(Math.tan(halfV) * camera.aspect);
+    const distance = MARGIN * Math.max(
+      1 / Math.sin(halfV),
+      1 + HALF_WIDTH / Math.tan(halfH)
+    );
+
+    camera.position.set(0, 0, distance);
+    camera.near = distance / 100;
+    camera.far = distance * 10;
+    camera.updateProjectionMatrix();
+  }
+
+  // Radians per second around x, y and z, in the same 5 to 6 to 1 proportion
+  // as the original cone. Unequal rates keep the tumble from settling into an
+  // obvious loop. Time-based, so it looks the same on 60 Hz and 120 Hz
+  // screens; the cap stops a jump after the tab has been in the background.
+  const SPIN = new THREE.Vector3(0.75, 0.9, 0.15);
+  const clock = new THREE.Clock();
+
+  function animate() {
+    requestAnimationFrame(animate);
+    const dt = Math.min(clock.getDelta(), 0.1);
+    tumblers.forEach((tumbler) => {
+      tumbler.rotation.x += SPIN.x * dt;
+      tumbler.rotation.y += SPIN.y * dt;
+      tumbler.rotation.z += SPIN.z * dt;
+    });
+    renderer.render(scene, camera);
+  }
+
+  window.addEventListener('resize', fitCamera);
+
+  fitCamera();
   animate();
 </script>

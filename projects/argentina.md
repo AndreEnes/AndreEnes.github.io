@@ -1,20 +1,18 @@
 ---
 layout: default
-title: argentina-opt - Machine Learning Optimization Toolkit
+title: argentina-opt - Machine Learning Optimisation Toolkit
 nav_order: 6
 ---
 
 [Back](../)
 
-## argentina-opt: Machine Learning Optimization Toolkit
+## argentina-opt: Machine Learning Optimisation Toolkit
 
-This project was developed to solve generic regression problems by finding optimal input parameters for a desired target output using machine learning. It employed the XGBoost library's XGBRegressor for predictions, with hyperparameter tuning handled by Hyperopt, and feature optimization performed using simulated annealing via SciPy’s dual_annealing.
+A toolkit for the inverse of a normal regression problem. Instead of asking what output a given set of inputs produces, you give it the output you want and it searches for the input values that get you there.
 
-The app featured a user-friendly Streamlit interface, though the machine learning logic was modularized to support integration with other frontends. Users could train models on custom datasets, make predictions from new inputs, and find optimal parameter configurations to approach a target output. The system supported both continuous and discrete variables and allowed detailed model explanation using SHAP values.
+An XGBoost regressor, tuned with Hyperopt, does the predicting. SciPy's dual_annealing does the searching, and discrete variables are handled by rounding the result to the nearest allowed step. Retraining is incremental, through XGBRegressor's `xgb_model=` argument. SHAP explains what the model is relying on. The interface is Streamlit, but I kept the machine learning in a separate `opt_model.py` so that it did not depend on the UI.
 
-A key functionality included incremental model retraining, which significantly reduced computational overhead. Additionally, project configurations were saved using JSON templates for persistent and repeatable workflows. Feature importance was visualized through SHAP beeswarm plots, offering intuitive insights into the model’s decision-making process.
-
-While the toolkit was designed with extensibility in mind, further improvements were identified, such as better discrete optimization via mixed-integer programming, more advanced SHAP plots, and real-time convergence visualization during optimization.
+Not everything got finished. Beeswarm is the only SHAP plot implemented, discrete optimisation deserves proper mixed-integer handling, and there is no way to watch the annealing converge while it runs.
 
 Take a look at the project in the [repo](https://github.com/AndreEnes/argentina-opt).
 
@@ -25,7 +23,7 @@ Take a look at the project in the [repo](https://github.com/AndreEnes/argentina-
 - Regression Problems
 - Streamlit
 - Gradient Assisted Boost Trees
-- Hyperparameter Optimization
+- Hyperparameter Optimisation
 - Simulated Annealing
 - SHAP
 - Data Processing and Transformation
@@ -39,10 +37,10 @@ Take a look at the project in the [repo](https://github.com/AndreEnes/argentina-
 
 ### Lowlights
 
-- Pre ChatGPT days made setting up Python packages a bit messy, since I had little to no guidance on how to properly use all the tools to make software development more reliable.
+- The pre-ChatGPT days made setting up Python packages a bit messy, since I had little to no guidance on how to properly use all the tools to make software development more reliable.
 - The code was quite messy. I don't want to look at it again.
 - Streamlit is great, but for bigger projects, it becomes hard to deal with.
-- I'm not sure if anyone used it.
+- The internship ended before I could find out how it was used.
 
 ### Lessons Learned
 

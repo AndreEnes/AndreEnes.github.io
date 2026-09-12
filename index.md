@@ -8,16 +8,20 @@ nav_order: 1
 
 ## André Enes
 
-I'm a Software Engineer at [Critical Techworks](https://www.criticaltechworks.com/), working since 2024 on BMW's in-vehicle data collection project, [Crowd Data Collector](https://www.bmwgroup.com/en/innovation/connected-car/data-ecosystem.html), which runs across BMW's fleet.
+I'm a Software Engineer at [Critical Techworks](https://www.criticaltechworks.com/), working since 2024 on BMW's in-vehicle data collection project, [Crowd Data Collector](https://www.bmwgroup.com/en/innovation/connected-car/data-ecosystem.html). Part of it is a sandboxed runtime for the car, which ships in every vehicle of BMW's [Neue Klasse](https://www.bmwgroup.com/en/company/neue-klasse.html).
 
-I have hands-on experience in embedded and real-time systems, plus some applied machine learning, and hold a [Master's in Electrical and Computer Engineering](https://sigarra.up.pt/feup/en/CUR_GERAL.CUR_VIEW?pv_ano_lectivo=2025&pv_origem=CUR&pv_tipo_cur_sigla=M&pv_curso_id=22806) from the University of Porto.
+My background is in embedded and real-time systems, with some applied machine learning along the way, and I hold a [Master's in Electrical and Computer Engineering](https://sigarra.up.pt/feup/en/CUR_GERAL.CUR_VIEW?pv_ano_lectivo=2025&pv_origem=CUR&pv_tipo_cur_sigla=M&pv_curso_id=22806) from the University of Porto.
 
-LinkedIn can be overwhelming. Perhaps a quieter space will allow me to share my work with less pressure. Check out the _Curriculum Vitae_ page for a concise overview. The other pages go deeper into university and side projects, plus hackathons I've joined.
+LinkedIn can be overwhelming. Perhaps a quieter space will allow me to share my work with less pressure. The _Projects_ page covers my current work on BMW's data collection platform, as well as university and side projects. The _Curriculum Vitae_ page has a fuller overview, and there is a separate page for the hackathons I've joined.
 
 ## Contacts
 
 - [andreenes222@gmail.com](mailto:andreenes222@gmail.com)  
-- LinkedIn – [AndreEnes](https://www.linkedin.com/in/andre-enes/)
-- GitHub [profile](https://github.com/AndreEnes)
+- LinkedIn: [AndreEnes](https://www.linkedin.com/in/andre-enes/)
+- GitHub: [AndreEnes](https://github.com/AndreEnes)
 
 {% include 3d.html %}
+
+---
+
+_The writing on this website was aided by AI. The work it describes, and the opinions about it, are mine._
