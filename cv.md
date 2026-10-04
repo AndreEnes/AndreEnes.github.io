@@ -22,7 +22,7 @@ nav_order: 14
 
 *January 2024 – Present*
 
-[Crowd Data Collector](https://www.bmwgroup.com/en/innovation/connected-car/data-ecosystem.html) is BMW's project for in-vehicle data collection. Its most unusual component is an "app runtime for the car": teams deploy small sandboxed workloads over the air onto vehicle ECUs. New features do not have to wait for a firmware release. For almost three years I have worked on both sides of it, the runtime itself and the jobs that run on top of it, together with teams in Germany and China.
+[Crowd Data Collector](https://www.bmwgroup.com/en/innovation/connected-car/data-ecosystem.html) is BMW's project for in-vehicle data collection. Its most unusual component is an "app runtime for the car": teams deploy small sandboxed workloads over the air onto vehicle ECUs. New features do not have to wait for a firmware release. For almost three years I have worked on both sides of it, the runtime itself and the jobs that run on top of it, together with teams in Germany and China. Alongside that, I designed and ran an internal coding competition for the team, written up on the [hackathons page](/projects/hackathons/#museum-of-modern-algorithms).
 
 #### Edge Computing & WebAssembly Platform
 

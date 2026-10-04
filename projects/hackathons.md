@@ -4,7 +4,7 @@ title: Hackathons
 nav_order: 4
 ---
 
-[Home](../)
+[Home](/)
 
 I really enjoy hackathons and all sorts of random competitions. I love the feeling of being fully focused on solving a challenge. It is a pity that most of them are mainly designed for university students.
 
@@ -27,6 +27,7 @@ For some of the competitions I took part in, I no longer have much evidence or d
 - [6th Cassini Hackathon](#6th-cassini-hackathon)
 - [Hackacity 2023 - Smart City Data Challenge](#hackacity-2023---smart-city-data-challenge)
 - [Media Dive - Aveiro Tech City](#media-dive---aveiro-tech-city)
+- [Museum of Modern Algorithms](#museum-of-modern-algorithms)
 
 ## What is this EBEC thing?
 
@@ -177,3 +178,15 @@ Teams knew the challenge a week in advance and had 12 hours on the competition d
 My team’s project, ZapZop, a mix of zapping and TikTok, showed short clips of shows matched to a user’s personality. Viewers could click a clip to watch the full programme.
 
 We didn’t win. The winning project was basically the same idea, just better.
+
+## Museum of Modern Algorithms
+
+This one I designed myself, in the summer of 2025, for my team at work. The objective of the hackathon was to practice implementing data structures in a "real" scenario.
+
+The premise was that the MoMA had closed, aliens had invaded, and they were obsessed with modern art, so the last humans needed a tool to keep them staring at paintings long enough to sabotage their ships.
+
+Underneath the story, teams had to answer three questions about [MoMA's own collection dataset](https://github.com/MuseumofModernArt/collection): which artworks share an artist, what was shown on a given date, and everything sorted by title. They could use AssemblyScript, TypeScript or C++, single threaded. I cleaned the dataset, wrote starter projects for two of the languages, and built the tooling that generated the expected answers and scored each submission against them.
+
+Judging covered speed, accuracy, output size and maintainability, plus the time spent on it outside scheduled meetings and one secret criterion.
+
+The guide, the rules and the starter projects are [on GitHub](https://github.com/AndreEnes/MuseumOfModernAlgorithms).
