@@ -1,0 +1,23 @@
+---
+---
+
+@import "{{ site.theme }}";
+
+// Site colours. Cayman's defaults are a green to blue header with green headings.
+$accent: #1b4edb;
+$accent-dark: #df8845;
+$link: #389adc;
+$text: #444;
+
+.page-header {
+  background-color: $accent-dark;
+  background-image: linear-gradient(120deg, $accent-dark, $accent);
+}
+
+.main-content {
+  color: $text;
+
+  h1, h2, h3, h4, h5, h6 { color: $accent; }
+
+  a { color: $link; }
+}

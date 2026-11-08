@@ -22,7 +22,7 @@ nav_order: 14
 
 *January 2024 – Present*
 
-[Crowd Data Collector](https://www.bmwgroup.com/en/innovation/connected-car/data-ecosystem.html) is BMW's project for in-vehicle data collection. Its most unusual component is an "app runtime for the car": teams deploy small sandboxed workloads over the air onto vehicle ECUs. New features do not have to wait for a firmware release. For almost three years I have worked on both sides of it, the runtime itself and the jobs that run on top of it, together with teams in Germany and China. Alongside that, I designed and ran an internal coding competition for the team, written up on the [hackathons page](/projects/hackathons/#museum-of-modern-algorithms).
+[Crowd Data Collector](https://www.bmwgroup.com/en/innovation/connected-car/data-ecosystem.html) is BMW's project for in-vehicle data collection. Its most unusual component is an "app runtime for the car": teams deploy small sandboxed workloads over the air onto vehicle ECUs. New features do not have to wait for a firmware release. I have worked on both sides of it, the runtime itself and the jobs that run on top of it, together with teams in Germany and China. Alongside that, I designed and ran an internal coding competition for the team, written up on the [hackathons page](/projects/hackathons/#museum-of-modern-algorithms).
 
 #### Edge Computing & WebAssembly Platform
 
@@ -57,12 +57,11 @@ Three-month intensive C++ programme at the start of the role, covering OOP, conc
 
 *December 2022 – October 2023*
 
-My M.Sc. dissertation, done on a research scholarship within the GreenAuto project for automotive industry sustainability. A wireless IoT sensor system for predictive maintenance on Automated Guided Vehicles and the machinery around them.
+My M.Sc. dissertation, done on a research scholarship within the GreenAuto project for automotive industry sustainability. Designed a low-cost wireless sensor module for fault detection in Automated Guided Vehicles and nearby machinery. The full dissertation and presentation are on the [project page](/projects/sensorSystem/).
 
-- **Embedded Firmware:** Built Teensy and ESP-12E firmware collecting vibration, sound and temperature, with DFT, STFT and wavelet processing on the device, SD card logging and real-time WiFi streaming.
-- **Anomaly Detection:** Benchmarked five supervised and three unsupervised models. XGBoost was the best, reaching an F1 of 0.99 on the most imbalanced dataset (9% anomalies); the unsupervised models could not separate the faults.
-- **Data Pipeline:** Chose time-domain features for preprocessing, mainly to keep the wireless traffic down.
-- **Outcome:** Showed that predictive maintenance can be retrofitted to legacy AGV equipment. Full dissertation and presentation available on the [project page](/projects/sensorSystem/).
+- **Embedded Firmware:** Developed Teensy firmware to sample vibration, sound and temperature at fixed rates, with SD card logging, and tested WiFi transfer to an InfluxDB database.
+- **Fault Detection:** Built three lab testbeds and compared eight machine learning models. XGBoost detected a poorly lubricated bearing with an F1 score of 0.99, and reached 0.74 on a testbed outside its training data.
+- **Data Processing:** Selected compact statistical features that could later run on the sensor module itself, reducing wireless traffic.
 
 ### Summer Internship – ML Toolkit – DIGI2 Laboratory, FEUP
 
