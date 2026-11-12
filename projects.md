@@ -8,8 +8,8 @@ nav_order: 2
 
 ## List
 
-- **[Automotive Metrics on the Heart of Joy ECU](metrics/)** *(2026 to present)*  
-  An embedded metrics service for BMW's in-vehicle data collection platform, validated on a real ECU with hardware-in-the-loop tests.
+- **[Metrics on an AUTOSAR ECU](metrics/)** *(2026 to present)*  
+  A per-job metrics service for the job runtime on BMW's Heart of Joy, taken over from a team in China, validated on the ECU with hardware-in-the-loop tests.
 
 - **[A Portable Job Runtime for Vehicle ECUs](runtime/)** *(2025 to present)*  
   The C++ core that installs, validates and runs data collection jobs across different vehicle ECUs.

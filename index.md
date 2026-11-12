@@ -6,9 +6,9 @@ nav_order: 1
 
 [Projects](projects/) | [Hackathons](projects/hackathons/) | [Curriculum Vitae](cv/)
 
-## André Enes
+## About
 
-I'm a Software Engineer at [Critical Techworks](https://www.criticaltechworks.com/), working since 2024 on BMW's in-vehicle data collection project, [Crowd Data Collector](https://www.bmwgroup.com/en/innovation/connected-car/data-ecosystem.html). Part of it is a sandboxed runtime for the car, which ships in every vehicle of BMW's [Neue Klasse](https://www.bmwgroup.com/en/company/neue-klasse.html).
+I'm a Software Engineer at [Critical Techworks](https://www.criticaltechworks.com/), working since 2024 on BMW's in-vehicle data collection project, [Crowd Data Collector](https://www.bmwgroup.com/en/innovation/connected-car/data-ecosystem.html). Part of it is a sandboxed runtime for the car, which ships in every vehicle of BMW's [Neue Klasse](https://www.bmwgroup.com/en/company/neue-klasse.html). Since 2026 I also work on the job runtime of BMW's [Heart of Joy](https://www.bmw.pt/pt/more-bmw/technology-and-innovation/bmw-heart-of-joy.html), a Classic AUTOSAR ECU.
 
 My background is in embedded and real-time systems, with some applied machine learning along the way, and I hold a [Master's in Electrical and Computer Engineering](https://sigarra.up.pt/feup/en/CUR_GERAL.CUR_VIEW?pv_ano_lectivo=2025&pv_origem=CUR&pv_tipo_cur_sigla=M&pv_curso_id=22806) from the University of Porto.
 

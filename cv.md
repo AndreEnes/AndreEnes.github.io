@@ -8,10 +8,10 @@ nav_order: 14
 
 ## Core Technical Skills
 
-- **Domains:** Safety-critical automotive, embedded and edge systems, applied machine learning
+- **Domains:** Safety-critical automotive (Classic AUTOSAR, ISO 26262, ASPICE), embedded systems, applied machine learning
 - **Programming Languages:** C/C++, Python, TypeScript, AssemblyScript, Bash
-- **Tools & Platforms:** Git, Docker, CI/CD (GitHub Actions, Zuul), CMake, Bazel, ROS, WebAssembly, JTAG Debuggers
-- **Quality & Safety:** ASAN/TSAN, Valgrind, Static Analysis (Coverity, SonarQube)
+- **Embedded & Quality:** Infineon AURIX, JTAG, hardware-in-the-loop testing, ASAN/TSAN, Valgrind, Coverity, SonarQube
+- **Build & CI:** Bazel, CMake, Docker, GitHub Actions, Zuul
 - **Languages:** Portuguese (Native), English (C2), Spanish (B1), German (A2, studying for B1)
 
 ---
@@ -24,6 +24,17 @@ nav_order: 14
 
 [Crowd Data Collector](https://www.bmwgroup.com/en/innovation/connected-car/data-ecosystem.html) is BMW's project for in-vehicle data collection. Its most unusual component is an "app runtime for the car": teams deploy small sandboxed workloads over the air onto vehicle ECUs. New features do not have to wait for a firmware release. I have worked on both sides of it, the runtime itself and the jobs that run on top of it, together with teams in Germany and China. Alongside that, I designed and ran an internal coding competition for the team, written up on the [hackathons page](/projects/hackathons/#museum-of-modern-algorithms).
 
+#### Classic AUTOSAR Job Runtime
+
+*January 2026 – Present*
+
+The job runtime on BMW's Heart of Joy, a Classic AUTOSAR ECU built around an Infineon AURIX microcontroller. The same ECU runs the driving dynamics and manages the high-voltage battery, so the runtime must never disturb the applications around it. My team took it over from the team in China that built it.
+
+- **Observability:** Designed and integrated a [per-job metrics service](/projects/metrics/), the first new feature on the runtime after the takeover.
+- **On-Target Validation:** Assembled the hardware test bench and validated the complete path on the ECU with hardware-in-the-loop tests and a JTAG debugger. Improved the end-to-end test framework.
+- **Tooling:** Added persistent storage to the host-side simulator, so stateful jobs can be tested across restarts without hardware. Maintained the release and CI pipelines across Linux, macOS and Windows.
+- **Reliability:** Integrated lifecycle and concurrency fixes into a vehicle release and fixed defects found during integration.
+
 #### Edge Computing & WebAssembly Platform
 
 *September 2025 – Present*
@@ -32,8 +43,10 @@ A hardware-agnostic C++14 and POSIX [framework](/projects/runtime/) that orchest
 
 - **Sandboxed Execution:** Built permission-gated system services in the WebAssembly runtime. A job is compiled once and then runs sandboxed on every supported ECU.
 - **Job Lifecycle:** Contributed to the cross-ECU job lifecycle and its API, covering install, validation, update and uninstall.
-- **Production Hardening:** Hardened the runtime with ASAN, TSAN, Valgrind, Coverity and SonarQube, run through the Zuul CI pipelines. Added rate-limiting and RAM monitoring to keep jobs inside the memory budget of constrained hardware.
-- **Observability:** Built a [per-job metrics service](/projects/metrics/) for the platform's runtime on BMW's Heart of Joy, a Classic AUTOSAR ECU, and validated the whole path on the target with hardware-in-the-loop tests and a JTAG debugger.
+- **Production Hardening:** Hardened the runtime with ASAN, TSAN, Valgrind, Coverity and SonarQube, run through the Zuul CI pipelines. Added rate limiting and RAM monitoring to keep jobs inside the memory budget of constrained hardware.
+- **Observability:** Added metrics to the rate limiter, so the team can see which jobs hit their limits, and surfaced each job's most recent errors so the backend links directly to the relevant logs. Built event-loss and received-event metrics in the platform's event pipeline.
+- **Testing:** Wrote concurrency stress tests for a platform service and fixed the deadlock they exposed under ThreadSanitizer. Removed coverage exclusions across the codebase and covered the gaps with unit tests, so the coverage gate covers all code.
+- **Release Automation:** Automated releases for a shared library.
 
 #### In-Vehicle Data Collection Jobs & SDK Ecosystem
 

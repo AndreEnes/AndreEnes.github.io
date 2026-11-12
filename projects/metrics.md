@@ -1,23 +1,23 @@
 ---
 layout: default
-title: Automotive Metrics on the Heart of Joy ECU
+title: Metrics on an AUTOSAR ECU
 nav_order: 15
 ---
 
 [Back](../)
 
-## Automotive Metrics on the Heart of Joy ECU
+## Metrics on an AUTOSAR ECU
 
-During 2026 I implemented an embedded metrics service for BMW's Crowd Data Collector, together with the hardware-in-the-loop tests that validated it on the target ECU, BMW's [Heart of Joy](https://www.bmw.pt/pt/more-bmw/technology-and-innovation/bmw-heart-of-joy.html), a Classic AUTOSAR platform.
+In 2026 my team took over the job runtime on BMW's [Heart of Joy](https://www.bmw.pt/pt/more-bmw/technology-and-innovation/bmw-heart-of-joy.html), a Classic AUTOSAR ECU. A team in China had built it to do the same work as [the core I work on](../runtime/). Unlike the Linux, QNX and Android ECUs the core runs on, the Heart of Joy is built around an Infineon AURIX microcontroller, so there is much less memory and CPU time to work with.
 
-That ECU runs its own runtime, built by a team in China to do the same job as [the core I work on](../runtime/). It is being handed over to my team, and the metrics are how we will see it running.
+### The Metrics Service
 
-> This is a high-level description of the work. It intentionally omits proprietary interfaces, identifiers, and vehicle data.
+The first new feature I built on the runtime was a metrics service that counts, for each [job](../jobs/), the data it sends and the storage it uses. On a microcontroller, measuring a job must not change its timing, so the cost has to be predictable rather than merely small.
 
-### The Service
+### Validation
 
-For each [job](../jobs/), the service counts the amount of data sent and the amount of memory used. An ECU has very little memory, CPU time or bandwidth to spare, and measuring a job must not change its timing, so the cost has to be predictable rather than merely small. A job only updates a metric once the operation has actually succeeded, so the numbers describe what happened rather than what was attempted. The job does not wait for them to be sent: the values are picked up at a fixed interval, handed to another ECU, and forwarded to the backend from there.
+The same ECU runs the driving dynamics and manages the high-voltage battery, so the runtime has to be tested thoroughly enough that it never disturbs the other applications running on it. Some problems, such as timing, only appear on real hardware, so I tested the complete path on the target ECU, on a test bench I assembled. A JTAG debugger let me read the values in memory and check that each one was attributed to the right job.
 
-### Hardware-in-the-Loop Validation
+### Other Work
 
-Simulation alone is not enough for validating resource-constrained ECU software: timing and the transport underneath only misbehave on real hardware, so I tested the complete path on the target ECU. A JTAG debugger on the bench let me halt it and read the values in memory rather than infer them from the other end. The tests installed controlled jobs, made them send data and use memory, and checked that each value reached the vehicle interface attributed to the right job and at the right interval.
+I added persistent storage to the runtime's simulator, so jobs can be tested across restarts without hardware. I also integrated lifecycle and concurrency fixes into a vehicle release.
